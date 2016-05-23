@@ -1,0 +1,25 @@
+.container {
+
+  .flex1 {
+    flex:1;
+  }
+
+  .flex2{
+    flex:2;
+  }
+
+  display: flex;
+
+  .head {
+    display: flex;
+    flex-direction: column;
+
+
+
+  }
+
+  .content {
+
+  }
+
+}
