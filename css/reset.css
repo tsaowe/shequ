@@ -102,4 +102,11 @@ input[type="button"], input[type="submit"], input[type="reset"] {
 }
 
 textarea {  -webkit-appearance: none;}
-.button{ border-radius: 0; }
+
+.clearfix:before,.clearfix:after{ 
+    content:""; 
+    display:table; 
+} 
+.clearfix:after{clear:both;} 
+.clearfix{ 
+    *zoom:1;/*IE/7/6*/
