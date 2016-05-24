@@ -1,36 +1,60 @@
 body{
 	background-color:#fff;
-	width:640px;
 	line-height:100%;
 }
 
 .red-main{
-	  width:640px;
+  display: none;
+  width:640px;
+  transform-origin: 0 0;
 }
 
 .rm-head{
 	background:url('../images/ired_back.png');
 	width:100%;
-	height:368px;
+	height:404px;
 	background-size:cover;
 	color:#fff;
 }
 
-.rm-title{
-	width:100%;
-	height:70px;
-	font-size:26px;
-	text-align:center;
-	line-height:70px;
-
-	.title-back{
-
-	}
-
-	.title-text{
-
-	}
+.fl{
+  float:left;
 }
+.back {
+  height: 107px;
+  display: flex;
+  flex-direction: column;
+  >div {
+    flex:1;
+    text-align: center;
+    .svg {
+      margin-left:20px;
+    }
+    .export-title {
+      font-size: 30px;
+      margin:0 auto;
+      position: relative;
+      left:-20px;
+    }
+
+  }
+}
+
+//.rm-title{
+//	width:100%;
+//	height:70px;
+//	font-size:26px;
+//	text-align:center;
+//	line-height:70px;
+//
+//	.title-back{
+//
+//	}
+//
+//	.title-text{
+//
+//	}
+//}
 
 .today-income{
   margin-left:32px;
@@ -45,7 +69,7 @@ body{
 		margin-top:18px;
 		font-size:26px;
 
-		.sum-count{
+		.today-count{
 			line-height:72px;
 			font-size:72px;
 			margin-left:4px;
@@ -114,15 +138,19 @@ body{
 }
 
 .rm-bottom{
-	position:absolute;
-	bottom: 200px;
+	bottom:0;
 	width:640px;
+    position:absolute;
+    display:none;
+    padding-bottom:200px;
+    transform-origin:left bottom;
 
-	.rm-btn{
+
+  .rm-btn{
 		width:400px;
 		height:72px;
-		background: url('../images/ired_ablebtn.png');
-		background-size:cover;
+		background:#fc5c6c;
+        border-radius: 36px;
 		line-height:72px;
 		font-size:28px;
 		color:#fff;
