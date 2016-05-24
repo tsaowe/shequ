@@ -11,6 +11,7 @@
     <script>
         setTimeout(function () {
             var ratio = document.body.offsetWidth / 640;
+            var height = window.screen.height;
             var style = '.red-main,.rm-bottom{-webkit-transform:scale('+ratio+');transform: scale('+ratio+');display:block;} body{height:'+height+'px;}';
             var stl = document.createElement('style');
             stl.innerHTML = style;
