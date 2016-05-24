@@ -1,5 +1,7 @@
 body{
   background-color:#fff;
+  font-family:Helvetica;
+
 }
 
 .rank-main{
@@ -11,7 +13,7 @@ body{
 .rank-head{
   background:url('../images/irank_back.png');
   width:100%;
-  height:405px;
+  height:470px;
   background-size:cover;
   color:#fff;
 }
@@ -26,15 +28,135 @@ body{
   >div {
     flex:1;
     text-align: center;
+    line-height:44px;
     .svg {
-      margin-left:20px;
+      display:block;
+      width:44px;
+      height:44px;
+      margin-left:16px;
+      background:url('../images/left_arrow.png');
+      background-size:cover;
+
     }
     .export-title {
       font-size: 30px;
       margin:0 auto;
       position: relative;
-      left:-20px;
+      left:-16px;
     }
 
   }
+}
+
+.rank-badge{
+  margin-top:12px;
+  width:100%;
+  text-align:center;
+
+  .rb-img{
+    background:url('../images/irank_badge.png');
+    width:200px;
+    height:200px;
+    background-size:cover;
+    font-size:66px;
+    text-align:center;
+    line-height:160px;
+    text-shadow:4px 2px 1px rgba(190,33,48,0.3);
+    margin:0 auto;
+  }
+  .rb-text{
+    margin-top:20px;
+    font-size:24px;
+    span{
+      color:#ffdf34;
+    }
+  }
+
+}
+
+
+
+.rank-exp{
+  width:100%;
+  .re-box{
+    margin-top:14px;
+    margin-left:32px;
+    .re-v{
+      display:inline-block;
+      background:url('../images/irank_v.png');
+      width:29px;
+      height:29px;
+      background-size:cover;
+
+    }
+    .re-num{
+      position:relative;
+      left:-5px;
+      top:-3px;
+      font-size:20px;
+
+    }
+
+
+
+  }
+
+  .re-text{
+    text-align:center;
+    font-size:24px;
+  }
+}
+
+.re-img {
+  display: inline-block;
+  margin:20px 12px;
+  width:440px;
+  height:6px;
+  border-radius: 5px;
+  background: rgba(255,255,255,0.3);
+  .fill {
+    width:20%;
+    height: 6px;
+    border-radius: 5px;
+    background: #ffffff;
+    display: inline-block;
+    position: relative;
+    top:-7px;
+  }
+}
+
+.rank-note{
+  border-top:16px #f5f5f5 solid;
+  padding-top:20px;
+
+  .rn-icon{
+    margin-left:32px;
+    width:30px;
+    height:30px;
+    background: url('../images/irank_note.png');
+    background-size:cover;
+    float:left;
+
+
+  }
+  .rn-content{
+    margin-left:72px;
+    margin-right:72px;
+    .rn-title{
+      font-size:28px;
+      color:#333;
+
+    }
+    .rn-text{
+      margin-top:10px;
+      font-size:24px;
+      color:#666;
+      line-height:44px;
+
+    }
+  }
+
+
+
+
 }
