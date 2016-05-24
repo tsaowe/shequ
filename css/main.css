@@ -11,8 +11,7 @@ body {
   width: 100%;
   height: 368px;
   background-size: cover;
-  color: #fff;
-  padding-left: 32px; }
+  color: #fff; }
 
 .rm-title {
   width: 100%;
@@ -21,32 +20,34 @@ body {
   text-align: center;
   line-height: 70px; }
 
-.today-income .ti-text {
-  font-size: 26px;
-  line-height: 26px;
-  margin-top: 32px; }
+.today-income {
+  margin-left: 32px; }
+  .today-income .ti-text {
+    font-size: 26px;
+    line-height: 26px;
+    margin-top: 32px; }
+  .today-income .ti-sum {
+    margin-top: 18px;
+    font-size: 26px; }
+    .today-income .ti-sum .sum-count {
+      line-height: 72px;
+      font-size: 72px;
+      margin-left: 4px; }
 
-.today-income .ti-sum {
-  margin-top: 18px;
-  font-size: 26px; }
-  .today-income .ti-sum .sum-count {
-    line-height: 72px;
-    font-size: 72px;
-    margin-left: 4px; }
-
-.all-income .ai-text {
-  margin-top: 48px;
-  font-size: 20px;
-  line-height: 20px;
-  color: rgba(255, 255, 255, 0.7); }
-
-.all-income .ai-sum {
-  font-size: 26px;
-  margin-top: 18px; }
-  .all-income .ai-sum .sum-count {
-    font-size: 32px;
-    line-height: 32px;
-    margin-left: 4px; }
+.all-income {
+  margin-left: 32px; }
+  .all-income .ai-text {
+    margin-top: 48px;
+    font-size: 20px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.7); }
+  .all-income .ai-sum {
+    font-size: 26px;
+    margin-top: 18px; }
+    .all-income .ai-sum .sum-count {
+      font-size: 32px;
+      line-height: 32px;
+      margin-left: 4px; }
 
 .rm-list {
   width: 100%;
@@ -90,3 +91,5 @@ body {
     color: #fff;
     text-align: center;
     margin: 0 auto; }
+
+/*# sourceMappingURL=main.css.map */

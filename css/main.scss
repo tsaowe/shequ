@@ -14,8 +14,6 @@ body{
 	height:368px;
 	background-size:cover;
 	color:#fff;
-	padding-left:32px;
-
 }
 
 .rm-title{
@@ -35,6 +33,7 @@ body{
 }
 
 .today-income{
+  margin-left:32px;
 
 	.ti-text{
 	    font-size:26px;
@@ -55,6 +54,8 @@ body{
 }
 
 .all-income{
+  margin-left:32px;
+
 	.ai-text{
 		margin-top:48px;
 		font-size:20px;
