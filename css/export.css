@@ -128,3 +128,47 @@ html, body {
     line-height: 72px;
     color: #ffffff;
     text-align: center; }
+  .container .modal {
+    height: 2000px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden; }
+    .container .modal .dialog {
+      height: 410px;
+      width: 500px;
+      background: #ffffff;
+      margin: 200px auto;
+      border-radius: 10px;
+      text-align: center; }
+      .container .modal .dialog > div {
+        display: inline-block;
+        width: 100%; }
+      .container .modal .dialog .gap1 {
+        height: 32px; }
+      .container .modal .dialog .ok {
+        background-image: url("../images/ired_ok.png");
+        width: 200px;
+        height: 130px; }
+      .container .modal .dialog .gap2 {
+        height: 10px; }
+      .container .modal .dialog .status {
+        color: #666666;
+        font-size: 30px; }
+      .container .modal .dialog .gap3 {
+        height: 20px; }
+      .container .modal .dialog .text {
+        color: #999999;
+        font-size: 24px; }
+      .container .modal .dialog .gap4 {
+        height: 60px; }
+      .container .modal .dialog .btn {
+        width: 300px;
+        height: 72px;
+        border-radius: 36px;
+        background: #f95e6f;
+        color: #ffffff;
+        line-height: 72px;
+        font-size: 28px; }

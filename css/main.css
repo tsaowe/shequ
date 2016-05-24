@@ -5,6 +5,7 @@ body {
 .red-main {
   display: none;
   width: 640px;
+  -webkit-transform-origin: 0 0;
   transform-origin: 0 0; }
 
 .rm-head {
@@ -19,9 +20,15 @@ body {
 
 .back {
   height: 107px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column; }
   .back > div {
+    -webkit-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     text-align: center;
     line-height: 44px; }
@@ -103,6 +110,7 @@ body {
   position: absolute;
   display: none;
   padding-bottom: 200px;
+  -webkit-transform-origin: left bottom;
   transform-origin: left bottom; }
   .rm-bottom .rm-btn {
     width: 400px;
@@ -114,5 +122,3 @@ body {
     color: #fff;
     text-align: center;
     margin: 0 auto; }
-
-/*# sourceMappingURL=main.css.map */
