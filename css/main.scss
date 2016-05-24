@@ -233,10 +233,69 @@ body{
 		border-radius: 10px;
 		text-align: center;
 		>div{
-			display: inline-block;
 			width:100%;
 		}
+		.gap1{
+			height:50px;
+		}
+		.explain{
+			font-size: 24px;
+			color:#666666;
+			height:24px;
+		}
+		.gap12{
+			height:18px;
+		}
+		.sum{
+			font-size: 60px;
+			height:60px;
+			margin-top: 18px;
+			color:#333333;
+			sub{
+				font-size: 24px;
+				color: #333333;
+				position: relative;
+				top:-2px;
+			}
+		}
+		.gap2{
+			height: 15px;
+		}
+		.warning{
+			height:60px;
+			color:#999999;
+			font-size: 22px;
+			width: 440px;
+			text-align: left;
+			line-height: 33px;
+			margin:0 auto;
+		}
+		.gap3{
+			height: 34px;
+		}
 
+		.btns {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			.btn{
+				width:200px;
+				height:70px;
+				border-radius: 35px;
+				line-height: 70px;
+				font-size: 28px;
+
+				&:nth-child(1){
+					border:1px solid #d1d1d1;
+				}
+
+				&:nth-child(2){
+					background: #fc5c6c;
+					color:#ffffff;
+				}
+
+			}
+		}
 
 
 	}

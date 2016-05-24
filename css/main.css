@@ -175,5 +175,55 @@ body {
     border-radius: 10px;
     text-align: center; }
     .modal .dialog-confirm > div {
-      display: inline-block;
       width: 100%; }
+    .modal .dialog-confirm .gap1 {
+      height: 50px; }
+    .modal .dialog-confirm .explain {
+      font-size: 24px;
+      color: #666666;
+      height: 24px; }
+    .modal .dialog-confirm .gap12 {
+      height: 18px; }
+    .modal .dialog-confirm .sum {
+      font-size: 60px;
+      height: 60px;
+      margin-top: 18px;
+      color: #333333; }
+      .modal .dialog-confirm .sum sub {
+        font-size: 24px;
+        color: #333333;
+        position: relative;
+        top: -2px; }
+    .modal .dialog-confirm .gap2 {
+      height: 15px; }
+    .modal .dialog-confirm .warning {
+      height: 60px;
+      color: #999999;
+      font-size: 22px;
+      width: 440px;
+      text-align: left;
+      line-height: 33px;
+      margin: 0 auto; }
+    .modal .dialog-confirm .gap3 {
+      height: 34px; }
+    .modal .dialog-confirm .btns {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+      .modal .dialog-confirm .btns .btn {
+        width: 200px;
+        height: 70px;
+        border-radius: 35px;
+        line-height: 70px;
+        font-size: 28px; }
+        .modal .dialog-confirm .btns .btn:nth-child(1) {
+          border: 1px solid #d1d1d1; }
+        .modal .dialog-confirm .btns .btn:nth-child(2) {
+          background: #fc5c6c;
+          color: #ffffff; }
