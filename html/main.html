@@ -2,29 +2,53 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<title>我的直播红包</title>
 	<link rel="stylesheet" href="../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
+
+    <script>
+        setTimeout(function () {
+            var ratio = document.body.offsetWidth / 640;
+            var height = window.screen.height;
+            console.log(height);
+            var style = '.red-main,.rm-bottom{-webkit-transform:scale('+ratio+');transform: scale('+ratio+');display:block;} body{height:'+height+'px;}';
+            var stl = document.createElement('style');
+            stl.innerHTML = style;
+            document.head.appendChild(stl);
+        },0);
+
+
+    </script>
+
 </head>
 <body>
 	<div class="red-main">
 		<div class="rm-head">
-			<div class="rm-title">
-				<span class="title-back"></span>
-				<span class="title-text">我的直播红包</span>
-		    </div>
+            <div class="back">
+                <div></div>
+                <div>
+                    <span class="svg fl">&lt;</span>
+                    <span class="export-title">我的直播红包</span>
+                </div>
+            </div>
+			<!--<div class="rm-title">-->
+				<!--<span class="title-back"></span>-->
+				<!--<span class="title-text">我的直播红包</span>-->
+		    <!--</div>-->
 		    <div class="today-income">
 		    	<div class="ti-text">今日收入</div>
 		    	<div class="ti-sum">
 		    		<span class="sum-pre">￥</span>
-		    		<span class="sum-count">2332.21</span>
+		    		<span class="today-count" id="today_count">2332.21</span>
 		    	</div>
 		    </div>
 		     <div class="all-income">
 		    	<div class="ai-text">累计收入</div>
 		    	<div class="ai-sum">
 		    		<span class="sum-pre">￥</span>
-		    		<span class="sum-count">91213.00</span>
+		    		<span class="sum-count" id="sum_count">91213.00</span>
 		    	</div>
 		    </div>
 
@@ -32,17 +56,21 @@
 		<div class="rm-list">
            <div class="rl-nav">
            	<span class="nav-left">未转出金额</span>
-           	<span class="nav-right">2234.12</span>
+           	<span class="nav-right" id="reset_count">2234.12</span>
            </div>
            <div class="rl-nav">
            	<span class="nav-left">明细记录</span>
-           	<span class="nav-right"><i class="right_arrow"></i></span>
+           	<span class="right-arrow"></span>
            </div>
 		</div>
-		<div class="rm-bottom">
-			<div class="rm-btn">转出到聚美余额</div>
-		</div>
+
 	</div>
+    <div class="rm-bottom">
+        <div class="rm-btn">转出到聚美余额</div>
+    </div>
+    <script src="../lib/zepto.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/main.js"></script>
 
 </body>
 </html>

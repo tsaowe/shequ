@@ -1,41 +1,63 @@
 body{
 	background-color:#fff;
-	width:640px;
 	line-height:100%;
 }
 
 .red-main{
-	width:640px;
-	padding-left:32px;
+  display: none;
+  width:640px;
+  transform-origin: 0 0;
 }
 
 .rm-head{
 	background:url('../images/ired_back.png');
 	width:100%;
-	height:368px;
+	height:404px;
 	background-size:cover;
 	color:#fff;
-	padding-left:32px;
-
 }
 
-.rm-title{
-	width:100%;
-	height:70px;
-	font-size:26px;
-	text-align:center;
-	line-height:70px;
-
-	.title-back{
-
-	}
-
-	.title-text{
-
-	}
+.fl{
+  float:left;
 }
+.back {
+  height: 107px;
+  display: flex;
+  flex-direction: column;
+  >div {
+    flex:1;
+    text-align: center;
+    .svg {
+      margin-left:20px;
+    }
+    .export-title {
+      font-size: 30px;
+      margin:0 auto;
+      position: relative;
+      left:-20px;
+    }
+
+  }
+}
+
+//.rm-title{
+//	width:100%;
+//	height:70px;
+//	font-size:26px;
+//	text-align:center;
+//	line-height:70px;
+//
+//	.title-back{
+//
+//	}
+//
+//	.title-text{
+//
+//	}
+//}
 
 .today-income{
+  margin-left:32px;
 
 	.ti-text{
 	    font-size:26px;
@@ -47,7 +69,7 @@ body{
 		margin-top:18px;
 		font-size:26px;
 
-		.sum-count{
+		.today-count{
 			line-height:72px;
 			font-size:72px;
 			margin-left:4px;
@@ -56,6 +78,8 @@ body{
 }
 
 .all-income{
+  margin-left:32px;
+
 	.ai-text{
 		margin-top:48px;
 		font-size:20px;
@@ -105,7 +129,7 @@ body{
 		margin-right:12px;
 		margin-top:20px;
 		display:block;
-		background:url('../images/ired_close.png') center center no-repeat;
+		background:url('../images/right_arrow.png') center center no-repeat;
 		width:44px;
 		height:44px;
 
@@ -114,15 +138,19 @@ body{
 }
 
 .rm-bottom{
-	position:absolute;
-	bottom: 200px;
-	width:100%;
+	bottom:0;
+	width:640px;
+    position:absolute;
+    display:none;
+    padding-bottom:200px;
+    transform-origin:left bottom;
 
-	.rm-btn{
+
+  .rm-btn{
 		width:400px;
 		height:72px;
-		background: url('../images/ired_ablebtn.png');
-		background-size:cover;
+		background:#fc5c6c;
+        border-radius: 36px;
 		line-height:72px;
 		font-size:28px;
 		color:#fff;
