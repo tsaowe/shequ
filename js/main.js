@@ -7,3 +7,7 @@
 
     var resetCount = $('#reset_count').text();
     $('#reset_count').html(formatCurrency(resetCount));
+
+    $('#turn_record').tap(function(){
+        location.href='record.html';
+    })
