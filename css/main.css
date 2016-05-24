@@ -118,7 +118,7 @@ body {
   .rm-bottom .rm-btn {
     width: 400px;
     height: 72px;
-    background: #fc5c6c;
+    background-color: #fdbdc4;
     border-radius: 36px;
     line-height: 72px;
     font-size: 28px;
@@ -127,6 +127,7 @@ body {
     margin: 0 auto; }
 
 .modal {
+  display: none;
   height: 2000px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
