@@ -26,6 +26,7 @@ body {
   font-size: 26px;
   line-height: 26px;
   margin-top: 32px; }
+
 .today-income .ti-sum {
   margin-top: 18px;
   font-size: 26px; }
@@ -39,6 +40,7 @@ body {
   font-size: 20px;
   line-height: 20px;
   color: rgba(255, 255, 255, 0.7); }
+
 .all-income .ai-sum {
   font-size: 26px;
   margin-top: 18px; }
@@ -89,5 +91,3 @@ body {
     color: #fff;
     text-align: center;
     margin: 0 auto; }
-
-/*# sourceMappingURL=main.css.map */
