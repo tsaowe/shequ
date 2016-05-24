@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>我的直播等级</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/rank.css">
+
+    <script>
+        setTimeout(function () {
+            var ratio = document.body.offsetWidth / 640;
+            var style = '.rank-main{-webkit-transform:scale('+ratio+');transform: scale('+ratio+');display:block;}';
+            var stl = document.createElement('style');
+            stl.innerHTML = style;
+            document.head.appendChild(stl);
+        },0);
+    </script>
+
+</head>
+<body>
+<div class="rank-main">
+    <div class="rank-head">
+        <div class="back">
+            <div></div>
+            <div>
+                <span class="svg fl">&lt;</span>
+                <span class="export-title">我的直播等级</span>
+            </div>
+        </div>
+        <div class="rank-badge">
+            <div class="rb-img"><span>35</span></div>
+            <div class="rb-text">
+                击败了<span>80%</span>的用户
+            </div>
+        </div>
+        <div class="rank-exp">
+            <div class="re-box">
+                <span class="re-num">V 35</span>
+                <span class="re-img"></span>
+                <span class="re-num">V 36</span>
+            </div>
+            <div class="re-text">
+               距离升级还差2321经验值
+            </div>
+        </div>
+
+    </div>
+    <div class="rank-note">
+        <div class="rn-icon"></div>
+        <div class="rn-content">
+            <div class="rn-title">如何获得经验值</div>
+            <div class="rn-text">自己直播或者观看他人直播都可以增加经验给主播送礼物升级最快~</div>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="../lib/zepto.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/rank.js"></script>
+
+</body>
+</html>
