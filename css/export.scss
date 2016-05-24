@@ -14,10 +14,9 @@ html,body{
   background: #f7f7f7;
 }
 .container {
-
-  font-family: STHeiti sans-serif;
-
-
+  width:640px;
+  display: none;
+  transform-origin: 0 0;
   .fl{
     float:left;
   }

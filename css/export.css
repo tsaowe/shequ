@@ -10,7 +10,10 @@ html, body {
   background: #f7f7f7; }
 
 .container {
-  font-family: STHeiti sans-serif; }
+  width: 640px;
+  display: none;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0; }
   .container .fl {
     float: left; }
   .container .fr {
