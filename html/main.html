@@ -7,7 +7,6 @@
 	<title>我的直播红包</title>
 	<link rel="stylesheet" href="../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
-
     <script>
         setTimeout(function () {
             var ratio = document.body.offsetWidth / 640;
@@ -17,12 +16,13 @@
             stl.innerHTML = style;
             document.head.appendChild(stl);
         },0);
-
-
     </script>
 
 </head>
 <body>
+    <div class="rm-bottom">
+        <div class="rm-btn">转出到聚美余额</div>
+    </div>
 	<div class="red-main">
 		<div class="rm-head">
             <div class="back">
@@ -40,14 +40,14 @@
 		    	<div class="ti-text">今日收入</div>
 		    	<div class="ti-sum">
 		    		<span class="sum-pre">￥</span>
-		    		<span class="today-count" id="today_count">2332.21</span>
+		    		<span class="today-count" id="today_count">2,332.21</span>
 		    	</div>
 		    </div>
 		     <div class="all-income">
 		    	<div class="ai-text">累计收入</div>
 		    	<div class="ai-sum">
 		    		<span class="sum-pre">￥</span>
-		    		<span class="sum-count" id="sum_count">91213.00</span>
+		    		<span class="sum-count" id="sum_count">91,213.00</span>
 		    	</div>
 		    </div>
 
@@ -55,21 +55,51 @@
 		<div class="rm-list">
            <div class="rl-nav">
            	<span class="nav-left">未转出金额</span>
-           	<span class="nav-right" id="reset_count">2234.12</span>
+           	<span class="nav-right" id="reset_count">2,234.12</span>
            </div>
            <div class="rl-nav" id="turn_record">
            	<span class="nav-left">明细记录</span>
            	<span class="right-arrow"></span>
            </div>
 		</div>
+        <div class="modal" >
+            <div class="dialog-ok" style="display: none;">
+                <div class="gap1"></div>
+                <div class="ok"></div>
+                <div class="gap2"></div>
+                <div class="status">转出成功</div>
+                <div class="gap3"></div>
+                <div class="text">可前往聚美余额查看</div>
+                <div class="gap4"></div>
+                <div class="btn">确定</div>
+            </div>
+
+            <div class="dialog-confirm">
+                <div class="gap1"></div>
+                <div class="explain">本次可转出金额为</div>
+                <div class="gap12"></div>
+                <div class="sum"><span>888.33</span><sub>元</sub></div>
+                <div class="gap2"></div>
+                <div class="warning">
+                    温馨提示:每天累计传出金额不超过1000元,今日一传出200.34元
+                </div>
+                <div class="gap3"></div>
+                <div class="btns">
+                    <div class="btn">取消</div>
+                    <div class="btn">转出</div>
+                </div>
+            </div>
+
+        </div>
 
 	</div>
-    <div class="rm-bottom">
-        <div class="rm-btn">转出到聚美余额</div>
-    </div>
-    <script src="../lib/zepto.min.js"></script>
-    <script src="../js/common.js"></script>
-    <script src="../js/main.js"></script>
+
 
 </body>
+<script src="../lib/zepto.min.js"></script>
+<script>
+    $('.rm-btn').on('tap',function () {
+        console.log(123);
+    })
+</script>
 </html>

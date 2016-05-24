@@ -174,4 +174,133 @@ body{
 }
 
 
+.modal {
+	height: 2000px;
+	width:100%;
+	background-color: rgba(0,0,0,.3);
+	position: fixed;
+	top:0;
+	left: 0;
+	overflow: hidden;
+	.dialog-ok {
+		height: 410px;
+		width:500px;
+		background: #ffffff;
+		margin: 200px auto;
+		border-radius: 10px;
+		text-align: center;
+		>div{
+			display: inline-block;
+			width:100%;
+		}
 
+		.gap1 {
+			height:32px;
+		}
+		.ok {
+			background-image: url('../images/ired_ok.png');
+			width:200px;
+			height: 130px;
+		}
+		.gap2{
+			height:10px;
+		}
+		.status {
+			color:#666666;
+			font-size: 30px;
+		}
+		.gap3{
+			height:20px;
+		}
+		.text{
+			color:#999999;
+			font-size: 24px;
+		}
+		.gap4{
+			height:60px;
+		}
+		.btn{
+			width:300px;
+			height:72px;
+			border-radius: 36px;
+			background: #f95e6f;
+			color:#ffffff;
+			line-height:72px;
+			font-size: 28px;
+		}
+	}
+	.dialog-confirm{
+		height: 410px;
+		width:500px;
+		background: #ffffff;
+		margin: 200px auto;
+		border-radius: 10px;
+		text-align: center;
+		>div{
+			width:100%;
+		}
+		.gap1{
+			height:50px;
+		}
+		.explain{
+			font-size: 24px;
+			color:#666666;
+			height:24px;
+		}
+		.gap12{
+			height:18px;
+		}
+		.sum{
+			font-size: 60px;
+			height:60px;
+			margin-top: 18px;
+			color:#333333;
+			sub{
+				font-size: 24px;
+				color: #333333;
+				position: relative;
+				top:-2px;
+			}
+		}
+		.gap2{
+			height: 15px;
+		}
+		.warning{
+			height:60px;
+			color:#999999;
+			font-size: 22px;
+			width: 440px;
+			text-align: left;
+			line-height: 33px;
+			margin:0 auto;
+		}
+		.gap3{
+			height: 34px;
+		}
+
+		.btns {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			.btn{
+				width:200px;
+				height:70px;
+				border-radius: 35px;
+				line-height: 70px;
+				font-size: 28px;
+
+				&:nth-child(1){
+					border:1px solid #d1d1d1;
+				}
+
+				&:nth-child(2){
+					background: #fc5c6c;
+					color:#ffffff;
+				}
+
+			}
+		}
+
+
+	}
+}
