@@ -114,3 +114,58 @@ body {
     color: #fff;
     text-align: center;
     margin: 0 auto; }
+
+.modal {
+  height: 2000px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden; }
+  .modal .dialog-ok {
+    height: 410px;
+    width: 500px;
+    background: #ffffff;
+    margin: 200px auto;
+    border-radius: 10px;
+    text-align: center; }
+    .modal .dialog-ok > div {
+      display: inline-block;
+      width: 100%; }
+    .modal .dialog-ok .gap1 {
+      height: 32px; }
+    .modal .dialog-ok .ok {
+      background-image: url("../images/ired_ok.png");
+      width: 200px;
+      height: 130px; }
+    .modal .dialog-ok .gap2 {
+      height: 10px; }
+    .modal .dialog-ok .status {
+      color: #666666;
+      font-size: 30px; }
+    .modal .dialog-ok .gap3 {
+      height: 20px; }
+    .modal .dialog-ok .text {
+      color: #999999;
+      font-size: 24px; }
+    .modal .dialog-ok .gap4 {
+      height: 60px; }
+    .modal .dialog-ok .btn {
+      width: 300px;
+      height: 72px;
+      border-radius: 36px;
+      background: #f95e6f;
+      color: #ffffff;
+      line-height: 72px;
+      font-size: 28px; }
+  .modal .dialog-confirm {
+    height: 410px;
+    width: 500px;
+    background: #ffffff;
+    margin: 200px auto;
+    border-radius: 10px;
+    text-align: center; }
+    .modal .dialog-confirm > div {
+      display: inline-block;
+      width: 100%; }
