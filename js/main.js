@@ -10,4 +10,4 @@
 
     $('#turn_record').tap(function(){
         location.href='record.html';
-    })
+    });
