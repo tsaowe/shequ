@@ -108,5 +108,6 @@ textarea {  -webkit-appearance: none;}
     display:table; 
 } 
 .clearfix:after{clear:both;} 
-.clearfix{ 
-    *zoom:1;/*IE/7/6*/
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}

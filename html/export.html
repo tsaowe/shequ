@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>转出到聚美余额</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../css/export.css">
+    <script>
+        setTimeout(function () {
+            var ratio = document.body.offsetWidth / 640;
+            var style = '.container{-webkit-transform:scale('+ratio+');transform: scale('+ratio+');display:block;}';
+
+            var stl = document.createElement('style');
+            stl.innerHTML = style;
+            document.head.appendChild(stl);
+        },0);
+    </script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="back">
+            <div></div>
+            <div>
+                <span class="svg fl">&#xe604;</span>
+                <span class="export-title">转出到聚美余额</span>
+            </div>
+        </div>
+        <div class="money">
+            <div class="gap-not-export"></div>
+            <div class="not-export-title">未转出金额</div>
+            <div class="gap-money"></div>
+            <div class="sum">
+                <span class="cn">¥</span>
+                <span class="sum-money">2,332.21</span>
+            </div>
+            <div class="gap-btm"></div>
+            <div class="gap-btm-background"></div>
+        </div>
+
+        <div class="export-input-div">
+            <div class="gap-top"></div>
+            <div class="export">
+                <div class="gap"></div>
+                <div class="export-title">转出金额</div>
+                <div class="input">
+                    <input type="text" placeholder="本次最多转出59元"/>
+                </div>
+                <div class="delete fr">
+                    <span class="svg">&#xe605;</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="warning-div">
+            <div class="gap"></div>
+            <div class="warning-text">
+                <div></div>
+                <div></div>
+                <div>温馨提示:每天转出金额不超过1000元</div>
+            </div>
+        </div>
+        <div class="export-btn-div">
+            <div class="gap"></div>
+            <div class="btn">确认转出</div>
+        </div>
+
+    </div>
+</body>
+</html>
