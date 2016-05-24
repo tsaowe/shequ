@@ -4,8 +4,7 @@ body {
   line-height: 100%; }
 
 .red-main {
-  width: 640px;
-  padding-left: 32px; }
+  width: 640px; }
 
 .rm-head {
   background: url("../images/ired_back.png");
@@ -71,14 +70,14 @@ body {
     margin-right: 12px;
     margin-top: 20px;
     display: block;
-    background: url("../images/ired_close.png") center center no-repeat;
+    background: url("../images/right_arrow.png") center center no-repeat;
     width: 44px;
     height: 44px; }
 
 .rm-bottom {
   position: absolute;
   bottom: 200px;
-  width: 100%; }
+  width: 640px; }
   .rm-bottom .rm-btn {
     width: 400px;
     height: 72px;
