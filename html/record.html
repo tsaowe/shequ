@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的红包记录</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../css/record.css">
+    <script>
+        setTimeout(function () {
+            var ratio = document.body.offsetWidth / 640;
+            var style = '.container{-webkit-transform:scale('+ratio+');transform: scale('+ratio+');display:block;}';
+            var stl = document.createElement('style');
+            stl.innerHTML = style;
+            document.head.appendChild(stl);
+        },0);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="back">
+            <div></div>
+            <div>
+                <span class="svg fl">&#xe604;</span>
+                <span class="export-title">转出记录</span>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="record">
+            <div class="item">
+                <div class="content">
+                    <div class="gap"></div>
+                    <div class="event">收到聚美礼物</div>
+                    <div class="gap-time"></div>
+                    <div class="time">2016-05-24 14:53</div>
+                </div>
+                <div class="fr sum">+1.88</div>
+            </div>
+            <div class="item">
+
+                <div class="content">
+                    <div class="gap"></div>
+                    <div class="event">转出到聚美余额</div>
+                    <div class="gap-time"></div>
+                    <div class="time">2016-05-24 14:53</div>
+                </div>
+                <div class="fr sum">-1000.00</div>
+
+            </div>
+
+        </div>
+        <div class="tail"></div>
+    </div>
+</body>
+</html>
