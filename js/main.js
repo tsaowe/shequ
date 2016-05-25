@@ -1,5 +1,5 @@
 
-
+//初始化数据
 function initData(){
     $.ajax({
         type: "post",

@@ -24,7 +24,7 @@ html, body {
   .container .back {
     background: #ffffff;
     height: 107px;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #e6e6e6;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
