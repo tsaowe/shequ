@@ -20,3 +20,44 @@ function formatCurrency(num) {
         num.substring(num.length-(4*i+3));
     return (((sign)?'':'-') + num + '.' + cents);
 }
+
+/**
+ * 时间戳转换日期
+ * @param <int> timeNum  待时间戳(秒)
+ * @param <bool> isFull  返回完整时间(Y-m-d 或者 Y-m-d H:i:s)
+ */
+function TimeToDate(timeNum, isFull) {
+    isFull = isFull || true;
+    function add0(m){return m<10?'0'+m:m }
+    var time = new Date(timeNum*1000);
+    var ymdhis = "";
+    ymdhis += time.getFullYear() + "-";
+    ymdhis += add0(time.getMonth()) + "-";
+    ymdhis += add0(time.getDate());
+    if (isFull === true)
+    {
+        ymdhis += " " + add0(time.getHours()) + ":";
+        ymdhis += add0(time.getMinutes());
+    }
+    return ymdhis;
+}
+
+
+function initMsg(){
+    var alertBox = document.createElement('div');
+    var style="position:fixed;padding:22px;background:rgba(0, 0, 0, 0.5);color:#fff;border-radius:10px;font-size:24px;top:50%;left:50%;display:none;";
+    alertBox.setAttribute('style',style);
+    alertBox.setAttribute('id','alert_box');
+    document.getElementsByTagName('body')[0].appendChild(alertBox);
+}
+
+function showMsg(msg,time){
+    if(!document.getElementById('alert_box')) initMsg();
+    time = time || 3;
+    var alertBox = document.getElementById('alert_box');
+    alertBox.innerHTML = msg;
+    alertBox.style.display = 'block';
+    alertBox.style.marginLeft = -(alertBox.offsetWidth/2)+'px';
+    alertBox.style.marginTop = -(alertBox.offsetHeight/2)+'px';
+    setTimeout(function(){ alertBox.style.display = 'none';},parseInt(time)*1000);
+}
