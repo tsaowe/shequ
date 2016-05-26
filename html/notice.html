@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>直播红包转出公告</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../css/notice.css">
+    <script>
+        setTimeout(function () {
+            var ratio = document.body.offsetWidth / 640;
+            var style = '.container{-webkit-transform:scale('+ratio+');transform: scale('+ratio+');display:block;} ';
+            var stl = document.createElement('style');
+            stl.innerHTML = style;
+            document.head.appendChild(stl);
+            var body = document.getElementsByTagName('body')[0];
+            body.style.height  = document.body.offsetHeight * ratio + 'px';
+        },0);
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="back">
+        <div></div>
+        <div>
+            <span class="svg fl">&#xe604;</span>
+            <span class="export-title">直播红包转出公告</span>
+        </div>
+    </div>
+    <div class="note-head"></div>
+    <div class="note-text">
+        由于众多用户反馈目前直播中收到的红包自动转到聚美余额的时间过长（24小时），为了缩短到账时间，从5月28日起，聚美直播将取消直播中收到的红包自动转到余额的功能，更改为由用户自行转出，实时到账。
+    </div>
+    <div class="note-content"></div>
+    <div class="note-extra">
+        <div class="ne-text">3.86以下版本可通过点击下方按钮<br/>进入我的粉丝红包</div>
+        <div class="ne-btn"></div>
+    </div>
+</div>
+<!--<script src="../lib/zepto.min.js"></script>-->
+<!--<script src="../js/notice.js"></script>-->
+</body>
+</html>

@@ -1,5 +1,4 @@
 
-showMsg('111111111111111111');
 var pathUrl = "http://172.20.16.81:8081";
 //初始化数据
 function initData(){

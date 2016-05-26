@@ -1,14 +1,35 @@
 
 
-$.ajax({
-    type: "post",               //也可以是type
-    async: false,               //发送同步请求，此值可忽略,不影响结果
-    url: "",    //请求地址
-    dataType:'jsonp',               //固定值
-    jsonp:'callback',               //值可变，名称随意，但一般设为callback就可以了
-    jsonpCallback:'gdd',            //函数名，名称随意
-    success:function(data){         //成功后的回调函数,返回的数据放在data参数里
+//初始化数据
+function initData(){
+    $.ajax({
+        type: "post",
+        //async: false,
+        //url: "http://172.20.81.19/show/rest/live/userLiveGrade",
+        url:"http://show.jumeicd.com/show/rest/live/userLiveGrade",
+        dataType:'jsonp',
+        jsonp:'callback',
+        //jsonpCallback:'jsonpCallback',
+        success:function(res){
+            if(res.code === 0){
+                var data = res.data;
+                $('#rb_count').html(data.liveGrade);
+                $('#rb_percent').html(data.defeated);
+                $('#re_prenum').html(data.liveGrade);
+                $('#re_afternum').html(parseInt(data.liveGrade)+1);
+                $('#re_expnum').html(data.empiricalValueToNextGrade);
+                $('#re_progress').css({width:'40%'});
 
-    }
+                if(data.liveGrade == 50){
+                    $('.rank-exp').remove();
+                    $('.rank-badge').animate({'marginTop':'35px'},{duration:'slow',easing:'ease'});
 
-});
+                }
+            }
+
+        }
+
+    });
+}
+
+initData();

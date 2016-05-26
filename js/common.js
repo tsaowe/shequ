@@ -32,7 +32,7 @@ function TimeToDate(timeNum, isFull) {
     var time = new Date(timeNum*1000);
     var ymdhis = "";
     ymdhis += time.getFullYear() + "-";
-    ymdhis += add0(time.getMonth()) + "-";
+    ymdhis += add0(time.getMonth()+1) + "-";
     ymdhis += add0(time.getDate());
     if (isFull === true)
     {
