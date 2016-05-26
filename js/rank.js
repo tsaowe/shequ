@@ -22,7 +22,7 @@ function initData(){
 
                 if(data.liveGrade == 50){
                     $('.rank-exp').remove();
-                    $('.rank-badge').animate({'marginTop':'35px'},{duration:'slow',easing:'ease'});
+                    $('.rank-badge').animate({'marginTop':'52px'},{duration:'slow',easing:'ease'});
 
                 }
             }
