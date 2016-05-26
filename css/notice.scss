@@ -1,15 +1,5 @@
 @import "reset.css";
 
-@font-face {
-  font-family: 'tsaowe';
-  src: url('//at.alicdn.com/t/font_1464056006_236562.eot'); /* IE9*/
-  src: url('//at.alicdn.com/t/font_1464056006_236562.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('//at.alicdn.com/t/font_1464056006_236562.woff') format('woff'), /* chrome、firefox */
-  url('//at.alicdn.com/t/font_1464056006_236562.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url('//at.alicdn.com/t/font_1464056006_236562.svg#tsaowe') format('svg'); /* iOS 4.1- */
-}
-
-
 html,body{
   background: #fcdddd;
 }
@@ -17,38 +7,6 @@ html,body{
   width:640px;
   display: none;
   transform-origin: 0 0;
-  .fl{
-    float:left;
-  }
-  .fr{
-    float:right;
-  }
-
-  .svg {
-    font-family: tsaowe,sans-serif;
-    font-size: 30px;
-  }
-
-  .back {
-    background: #ffffff;
-    height: 107px;
-    border-bottom: 1px solid #e6e6e6;
-    display: flex;
-    flex-direction: column;
-    >div {
-      flex:1;
-      text-align: center;
-      .svg {
-        margin-left:20px;
-      }
-      .export-title {
-        font-size: 30px;
-        margin:0 auto;
-        position: relative;
-        left:-20px;
-      }
-    }
-  }
 
   .note-head{
     width:640px;

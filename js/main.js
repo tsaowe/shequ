@@ -20,7 +20,7 @@ function initData(){
                 //弹窗数据
                 $('#dia_reset').html(formatCurrency(data.remainCashingToday));
                 $('#day_max').html(formatCurrency(data.cashingMaxPerDay));
-                $('#dia_out').html(formatCurrency(data.cashingMaxPerDay-data.remainCashingToday));
+                //$('#dia_out').html(formatCurrency(data.cashingMaxPerDay-data.remainCashingToday));
                 if(data.cashingOpen){
                     $('.rm-btn').css({'background-color':'#fc5c6c'});
                     cashAble = true;

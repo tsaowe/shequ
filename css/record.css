@@ -1,11 +1,4 @@
 @import url(reset.css);
-@font-face {
-  font-family: 'tsaowe';
-  src: url("//at.alicdn.com/t/font_1464056006_236562.eot");
-  /* IE9*/
-  src: url("//at.alicdn.com/t/font_1464056006_236562.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1464056006_236562.woff") format("woff"), url("//at.alicdn.com/t/font_1464056006_236562.ttf") format("truetype"), url("//at.alicdn.com/t/font_1464056006_236562.svg#tsaowe") format("svg");
-  /* iOS 4.1- */ }
-
 html, body {
   background: #f7f7f7; }
 
@@ -14,35 +7,6 @@ html, body {
   display: none;
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0; }
-  .container .fl {
-    float: left; }
-  .container .fr {
-    float: right; }
-  .container .svg {
-    font-family: tsaowe,sans-serif;
-    font-size: 30px; }
-  .container .back {
-    background: #ffffff;
-    height: 107px;
-    border-bottom: 1px solid #e6e6e6;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-    .container .back > div {
-      -webkit-flex: 1;
-      -ms-flex: 1;
-      flex: 1;
-      text-align: center; }
-      .container .back > div .svg {
-        margin-left: 20px; }
-      .container .back > div .export-title {
-        font-size: 30px;
-        margin: 0 auto;
-        position: relative;
-        left: -20px; }
   .container .line {
     height: 20px;
     width: 592px;

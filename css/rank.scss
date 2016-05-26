@@ -1,6 +1,5 @@
 body{
   background-color:#fff;
-  font-family:Helvetica;
 
 }
 
@@ -13,43 +12,13 @@ body{
 .rank-head{
   background:url('../images/irank_back.png');
   width:100%;
-  height:470px;
+  height:363px;
   background-size:cover;
   color:#fff;
-}
-
-.fl{
-  float:left;
-}
-.back {
-  height: 107px;
-  display: flex;
-  flex-direction: column;
-  >div {
-    flex:1;
-    text-align: center;
-    line-height:44px;
-    .svg {
-      display:block;
-      width:44px;
-      height:44px;
-      margin-left:16px;
-      background:url('../images/left_arrow.png');
-      background-size:cover;
-
-    }
-    .export-title {
-      font-size: 30px;
-      margin:0 auto;
-      position: relative;
-      left:-16px;
-    }
-
-  }
+  padding-top:32px;
 }
 
 .rank-badge{
-  margin-top:12px;
   width:100%;
   text-align:center;
 
