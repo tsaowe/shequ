@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/tsaowe/shequ/issues"
   },
-  "homepage": "https://github.com/tsaowe/shequ#readme"
+  "homepage": "https://github.com/tsaowe/shequ#readme",
+  "devDependencies": {
+    "gulp-if": "^2.0.1",
+    "sprity": "^1.0.8",
+    "sprity-sass": "^1.0.4"
+  }
 }

@@ -47,6 +47,7 @@ html,body{
     background:#999999;
     margin: 24px auto 0;
   }
+
   .record {
     background: #ffffff;
     width:576px;
@@ -56,12 +57,26 @@ html,body{
     top:-10px;
     box-shadow:0 0 20px #ddd;
     margin:0 auto;
+    font-size:0;
+    border-left:1px #dedede solid;
+    border-right:1px #dedede solid;
+
+    .re-topline{
+      width:100%;
+      height:8px;
+      background:url('../images/ired_topline.png');
+      background-size:cover;
+    }
+
+    .re-block{
+      height:19px;
+    }
 
     .item {
 
       .content {
         display: inline-block;
-        width:80%;
+        width:70%;
       }
 
 
@@ -103,13 +118,15 @@ html,body{
         height:102px;
         line-height: 102px;
         display: inline-block;
-        width:20%;
+        width:30%;
       }
     }
 
 
   }
   .tail {
+    border-left:1px #dedede solid;
+    border-right:1px #dedede solid;
     width:588px;
     height:33px;
     margin :0 auto;
@@ -117,5 +134,27 @@ html,body{
     background-size: cover;
     position: relative;
     top:-10px;
+  }
+
+  .no-record{
+    margin-top:160px;
+    width:100%;
+    display:none;
+
+    .nr-img{
+      width:180px;
+      height:180px;
+      margin:0 auto;
+      background:url('../images/ired_null.png');
+      background-size:cover;
+
+    }
+
+    .nr-text{
+      margin-top:24px;
+      font-size:26px;
+      color:#999999;
+      text-align:center;
+    }
   }
 }

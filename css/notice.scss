@@ -1,4 +1,5 @@
 @import "reset.css";
+@import "sprite/note";
 
 html,body{
   background: #fcdddd;
@@ -9,10 +10,12 @@ html,body{
   transform-origin: 0 0;
 
   .note-head{
-    width:640px;
-    height:300px;
-    background:url('../images/pnote_head.png');
-    background-size:cover;
+//    width:640px;
+//    height:300px;
+//    background:url('../images/pnote_head.png');
+//    background-size:cover;
+    @include sprite($pnote_head);
+    @extend .icon;
   }
 
   .note-text{
@@ -22,10 +25,12 @@ html,body{
     line-height:35px;
   }
   .note-content{
-    width:640px;
-    height:1361px;
-    background:url('../images/pnote_intro.png');
-    background-size:cover;
+//    width:640px;
+//    height:1361px;
+//    background:url('../images/pnote_intro.png');
+//    background-size:cover;
+    @include sprite($pnote_intro);
+    @extend .icon;
   }
 
   .note-extra{
@@ -38,10 +43,12 @@ html,body{
     }
     .ne-btn{
       margin:16px 120px 30px 120px;
-      width:400px;
-      height:70px;
-      background:url('../images/pnote_btn.png');
-      background-size:cover;
+//      width:400px;
+//      height:70px;
+//      background:url('../images/pnote_btn.png');
+//      background-size:cover;
+      @include sprite($pnote_btn);
+      @extend .icon;
     }
 
   }

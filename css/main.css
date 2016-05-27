@@ -11,23 +11,21 @@ body {
 .rm-head {
   background: url("../images/ired_back.png") left bottom no-repeat;
   width: 100%;
-  height: 300px;
+  height: 264px;
   background-size: cover;
   color: #fff;
-  padding-top: 64px; }
+  padding-top: 32px; }
 
 .today-income {
-  margin-left: 40px; }
+  margin-left: 32px; }
   .today-income .ti-text {
     font-size: 26px;
     line-height: 26px; }
   .today-income .ti-sum {
     margin-top: 18px;
-    font-size: 26px; }
-    .today-income .ti-sum .today-count {
-      line-height: 72px;
-      font-size: 72px;
-      margin-left: 4px; }
+    line-height: 72px;
+    font-size: 72px;
+    height: 72px; }
 
 .all-income {
   margin-left: 32px; }
@@ -37,12 +35,10 @@ body {
     line-height: 20px;
     color: rgba(255, 255, 255, 0.7); }
   .all-income .ai-sum {
-    font-size: 26px;
-    margin-top: 18px; }
-    .all-income .ai-sum .sum-count {
-      font-size: 32px;
-      line-height: 32px;
-      margin-left: 4px; }
+    margin-top: 18px;
+    font-size: 32px;
+    line-height: 32px;
+    height: 32px; }
 
 .rm-list {
   width: 100%;
@@ -197,7 +193,8 @@ body {
         line-height: 70px;
         font-size: 28px; }
         .modal .dialog-confirm .btns .btn:nth-child(1) {
-          border: 1px solid #d1d1d1; }
+          border: 1px solid #d1d1d1;
+          color: #f5f5f5; }
         .modal .dialog-confirm .btns .btn:nth-child(2) {
           background: #fdbdc4;
           color: #ffffff; }
