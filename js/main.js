@@ -1,13 +1,12 @@
 
-var pathUrl = "http://172.20.16.81:8081";
 //初始化数据
 function initData(){
     $.ajax({
         type: "post",
         //async: false,
-        url: pathUrl+"/show/rest/ifans_redenvs/info",
-        dataType:'jsonp',
-        jsonp:'callback',
+        url: "../data/main.json",
+        dataType:'json',
+        //jsonp:'callback',
         //jsonpCallback:'jsonpCallback',
         success:function(res){
             if(res.code === 0){
@@ -20,13 +19,13 @@ function initData(){
                 //弹窗数据
                 $('#dia_reset').html(formatCurrency(data.remainCashingToday));
                 $('#day_max').html(formatCurrency(data.cashingMaxPerDay));
-                //$('#dia_out').html(formatCurrency(data.cashingMaxPerDay-data.remainCashingToday));
+                $('#dia_out').html(formatCurrency(data.todayCashing));
                 if(data.cashingOpen){
                     $('.rm-btn').css({'background-color':'#fc5c6c'});
                     cashAble = true;
                 }
-                if(data.remainCashingToday > 0){
-                    $('.rm-btn').css({'background-color':'#fc5c6c'});
+                if(data.remainCashingToday && parseFloat(data.remainCashingToday)> 0){
+                    $('#turn_btn').css({'background-color':'#fc5c6c'});
                     turnAble = true;
                 }
             }else{
@@ -42,6 +41,7 @@ function initData(){
 
 var cashAble = false;
 var turnAble = false;
+var isClick = false;
 initData();
 
 $('#turn_record').on('tap',function(){
@@ -55,12 +55,14 @@ $('.rm-btn').on('tap',function () {
 });
 
 $('#turn_btn').on('tap',function () {
-    if(!turnAble) return;
+    if(!turnAble || isClick) return;
+    isClick = true;
+    $('#turn_btn').text('转出中...').css({'background-color':'#fdbdc4'});
     $.ajax({
         type: "post",
-        url: pathUrl+"/show/rest/ifans_redenvs/cashing",
-        dataType:'jsonp',
-        jsonp:'callback',
+        url: "../data/main2.json",
+        dataType:'json',
+        //jsonp:'callback',
         success:function(res){
             if(res.code === 0){
                 initData();
@@ -71,7 +73,15 @@ $('#turn_btn').on('tap',function () {
                     showMsg(res.message);
                 }
             }
+        },
+        error:function(){
+            showMsg('转出失败，请再试试');
+        },
+        complete:function(){
+            $('#turn_btn').text('转出').css({'background-color':'#fc5c6c'});
+            isClick = false;
         }
+
     });
 
 });

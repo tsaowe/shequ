@@ -1,17 +1,17 @@
 <!doctype html>
 <html>
 <head>
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<title>我的粉丝红包</title>
-	<link rel="stylesheet" href="../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
     <script>
         setTimeout(function () {
-            var ratio = document.body.offsetWidth / 640;
-            var height = window.screen.height;
-            var style = '.red-main,.rm-bottom{-webkit-transform:scale('+ratio+');transform: scale('+ratio+');display:block;} body{height:'+height+'px;}';
+            var ratio = window.screen.width / 640;
+            var height = window.screen.height/ratio;
+            var style = 'body{-webkit-transform:scale('+ratio+');transform: scale('+ratio+');display:block;height:'+height+'px;display:block;}';
             var stl = document.createElement('style');
             stl.innerHTML = style;
             document.head.appendChild(stl);
@@ -26,15 +26,13 @@
 	<div class="red-main">
 		<div class="rm-head">
 		    <div class="today-income">
-		    	<div class="ti-text">今日收入（元）</div>
+		    	<div class="ti-text">今日直播收入（元）</div>
 		    	<div class="ti-sum" id="today_count">
-		    		<!--<span class="today-count" id="today_count"></span>-->
 		    	</div>
 		    </div>
 		     <div class="all-income">
-		    	<div class="ai-text">累计收入（元）</div>
+		    	<div class="ai-text">累计直播收入（元）</div>
 		    	<div class="ai-sum" id="sum_count">
-		    		<!--<span class="sum-count" id="sum_count"></span>-->
 		    	</div>
 		    </div>
 
@@ -69,7 +67,7 @@
                 <div class="sum"><span id="dia_reset"></span><sub>元</sub></div>
                 <div class="gap2"></div>
                 <div class="warning">
-                    温馨提示：每天累计转出金额不超过<span id="day_max"></span>元
+                    温馨提示：每天累计转出金额不超过<span id="day_max"></span>元，今日已转出<span id="dia_out"></span>元
                 </div>
                 <div class="gap3"></div>
                 <div class="btns">
@@ -83,6 +81,14 @@
     <script src="../lib/zepto.min.js"></script>
     <script src="../js/common.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../lib/sea.min.js"></script>
+    <script type="text/javascript" src="http://f0.jmstatic.com/static_common/dist/hybrid/20150917/js/hybrid/msdk.js" data-main="hybrid/msdk"></script>
+    <script>
+        seajs.use('hybrid/msdk', function(ms){
+            ms.share.hide();
+        });
+
+    </script>
 
 </body>
 </html>

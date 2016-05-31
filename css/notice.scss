@@ -42,7 +42,8 @@ html,body{
       text-align:center;
     }
     .ne-btn{
-      margin:16px 120px 30px 120px;
+      margin-top:16px;
+      margin-left:120px;
 //      width:400px;
 //      height:70px;
 //      background:url('../images/pnote_btn.png');
@@ -51,6 +52,10 @@ html,body{
       @extend .icon;
     }
 
+  }
+
+  .note-space{
+    height:30px;
   }
 
 

@@ -3,11 +3,9 @@
 function initData(){
     $.ajax({
         type: "post",
-        //async: false,
         url: "../data/record.json",
         dataType:'json',
-        jsonp:'callback',
-        //jsonpCallback:'jsonpCallback',
+        //jsonp:'callback',
         success:function(res){
             if(res.code === 0){
                 if(res.data && res.data.length>0){

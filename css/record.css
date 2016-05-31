@@ -1,4 +1,7 @@
 @import url(reset.css);
+.icon, .container .record .re-topline, .container .tail {
+  background-image: url("../images/sprite/record.png"); }
+
 html, body {
   background: #f7f7f7; }
 
@@ -20,16 +23,15 @@ html, body {
     line-height: 0;
     position: relative;
     top: -10px;
-    box-shadow: 0 0 20px #ddd;
     margin: 0 auto;
-    font-size: 0;
-    border-left: 1px #dedede solid;
-    border-right: 1px #dedede solid; }
+    font-size: 0; }
     .container .record .re-topline {
-      width: 100%;
-      height: 8px;
-      background: url("../images/ired_topline.png");
-      background-size: cover; }
+      background-position: 0px 0px;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      display: block;
+      width: 576px;
+      height: 8px; }
     .container .record .re-block {
       height: 19px; }
     .container .record .item {
@@ -78,15 +80,15 @@ html, body {
         display: inline-block;
         width: 30%; }
   .container .tail {
-    border-left: 1px #dedede solid;
-    border-right: 1px #dedede solid;
-    width: 588px;
-    height: 33px;
     margin: 0 auto;
-    background-image: url("../images/ired_bottom.png");
-    background-size: cover;
     position: relative;
-    top: -10px; }
+    top: -10px;
+    background-position: 0px -8px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    width: 588px;
+    height: 33px; }
   .container .no-record {
     margin-top: 160px;
     width: 100%;

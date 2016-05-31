@@ -1,15 +1,13 @@
 
 
+
 //初始化数据
 function initData(){
     $.ajax({
         type: "post",
-        //async: false,
-        //url: "http://172.20.81.19/show/rest/live/userLiveGrade",
-        url:"http://show.jumeicd.com/show/rest/live/userLiveGrade",
-        dataType:'jsonp',
-        jsonp:'callback',
-        //jsonpCallback:'jsonpCallback',
+        url:"../data/rank.json",
+        dataType:'json',
+        //jsonp:'callback',
         success:function(res){
             if(res.code === 0){
                 var data = res.data;
@@ -22,7 +20,7 @@ function initData(){
 
                 if(data.liveGrade == 50){
                     $('.rank-exp').remove();
-                    $('.rank-badge').animate({'marginTop':'52px'},{duration:'slow',easing:'ease'});
+                    $('.rank-badge').animate({'marginTop':'92px'},{duration:'slow',easing:'ease'});
 
                 }
             }
@@ -33,3 +31,4 @@ function initData(){
 }
 
 initData();
+

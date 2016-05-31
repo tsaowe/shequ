@@ -1,8 +1,5 @@
 @import url(reset.css);
 .icon, .container .note-head, .container .note-content, .container .note-extra .ne-btn {
-  background-image: url("../images/sprite/red.png"); }
-
-.icon, .container .note-head, .container .note-content, .container .note-extra .ne-btn {
   background-image: url("../images/sprite/note.png"); }
 
 html, body {
@@ -14,24 +11,24 @@ html, body {
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0; }
   .container .note-head {
-    background-position: 0px -78px;
+    background-position: 0px -70px;
     background-repeat: no-repeat;
     overflow: hidden;
     display: block;
-    width: 648px;
-    height: 308px; }
+    width: 640px;
+    height: 300px; }
   .container .note-text {
     margin: 20px 30px;
     font-size: 26px;
     color: #7e4343;
     line-height: 35px; }
   .container .note-content {
-    background-position: 0px -386px;
+    background-position: 0px -370px;
     background-repeat: no-repeat;
     overflow: hidden;
     display: block;
-    width: 648px;
-    height: 1369px; }
+    width: 640px;
+    height: 1361px; }
   .container .note-extra .ne-text {
     margin: 0 30px;
     font-size: 26px;
@@ -39,10 +36,13 @@ html, body {
     line-height: 35px;
     text-align: center; }
   .container .note-extra .ne-btn {
-    margin: 16px 120px 30px 120px;
+    margin-top: 16px;
+    margin-left: 120px;
     background-position: 0px 0px;
     background-repeat: no-repeat;
     overflow: hidden;
     display: block;
-    width: 408px;
-    height: 78px; }
+    width: 400px;
+    height: 70px; }
+  .container .note-space {
+    height: 30px; }

@@ -5,7 +5,11 @@
     "totalIncoming": 5000,
     "cashingOpen": 1,
     "todayIncoming": 1000,
-    "unCashingAmount": 0
+    "unCashingAmount": 0,
+    "remainCashingToday":456,
+    "cashingMaxPerDay":1000
+
+
   },
   "message": ""
 }

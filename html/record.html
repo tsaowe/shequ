@@ -2,18 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>我的红包记录</title>
+    <title>我的转出记录</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="stylesheet" href="../css/record.css">
     <script>
         setTimeout(function () {
-            var ratio = document.body.offsetWidth / 640;
+            var ratio = window.screen.width / 640;
             var style = '.container{-webkit-transform:scale('+ratio+');transform: scale('+ratio+');display:block;}';
             var stl = document.createElement('style');
             stl.innerHTML = style;
             document.head.appendChild(stl);
+            var body = document.getElementsByTagName('body')[0];
+            body.style.height  = document.body.offsetHeight * ratio + 'px';
         },0);
     </script>
 </head>
@@ -35,5 +37,13 @@
     <script src="../lib/zepto.min.js"></script>
     <script src="../js/common.js"></script>
     <script src="../js/record.js"></script>
+    <script src="../lib/sea.min.js"></script>
+    <script type="text/javascript" src="http://f0.jmstatic.com/static_common/dist/hybrid/20150917/js/hybrid/msdk.js" data-main="hybrid/msdk"></script>
+    <script>
+        seajs.use('hybrid/msdk', function(ms){
+            ms.share.hide();
+        });
+
+    </script>
 </body>
 </html>

@@ -6,6 +6,9 @@
  * @type String
  */
 function formatCurrency(num) {
+    if(!num){
+        return '0.00';
+    }
     num = num.toString().replace(/\$|\,/g,'');
     if(isNaN(num))
         num = "0";
@@ -28,7 +31,7 @@ function formatCurrency(num) {
  */
 function TimeToDate(timeNum, isFull) {
     isFull = isFull || true;
-    function add0(m){return m<10?'0'+m:m }
+    function add0(m){return m<10?'0'+m:m; }
     var time = new Date(timeNum*1000);
     var ymdhis = "";
     ymdhis += time.getFullYear() + "-";
@@ -43,6 +46,15 @@ function TimeToDate(timeNum, isFull) {
 }
 
 
+
+
+/**
+ * 提示消息
+ *
+ * @param msg String 消息文本
+ * @param time int 显示秒数
+ *
+ */
 function initMsg(){
     var alertBox = document.createElement('div');
     var style="position:fixed;padding:22px;background:rgba(0, 0, 0, 0.5);color:#fff;border-radius:10px;font-size:24px;top:50%;left:50%;display:none;";
@@ -53,7 +65,7 @@ function initMsg(){
 
 function showMsg(msg,time){
     if(!document.getElementById('alert_box')) initMsg();
-    time = time || 3;
+    time = time || 2;
     var alertBox = document.getElementById('alert_box');
     alertBox.innerHTML = msg;
     alertBox.style.display = 'block';

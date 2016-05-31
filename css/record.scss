@@ -1,4 +1,5 @@
 @import "reset.css";
+@import "sprite/record";
 
 html,body{
   background: #f7f7f7;
@@ -55,17 +56,18 @@ html,body{
     line-height: 0;
     position: relative;
     top:-10px;
-    box-shadow:0 0 20px #ddd;
+//    box-shadow:0 0 20px #ddd;
     margin:0 auto;
     font-size:0;
-    border-left:1px #dedede solid;
-    border-right:1px #dedede solid;
+
 
     .re-topline{
-      width:100%;
-      height:8px;
-      background:url('../images/ired_topline.png');
-      background-size:cover;
+//      width:100%;
+//      height:8px;
+//      background:url('../images/ired_topline.png');
+//      background-size:cover;
+      @include sprite($ired_topline);
+      @extend .icon;
     }
 
     .re-block{
@@ -125,15 +127,16 @@ html,body{
 
   }
   .tail {
-    border-left:1px #dedede solid;
-    border-right:1px #dedede solid;
-    width:588px;
-    height:33px;
+
+//    width:588px;
+//    height:33px;
     margin :0 auto;
-    background-image: url("../images/ired_bottom.png");
-    background-size: cover;
+//    background-image: url("../images/ired_bottom.png");
+//    background-size: cover;
     position: relative;
     top:-10px;
+    @include sprite($ired_bottom);
+    @extend .icon;
   }
 
   .no-record{
