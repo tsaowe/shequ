@@ -1,0 +1,455 @@
+html, body, div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1;
+  /*IE/7/6*/ }
+
+html, body {
+  background-color: #ffffff;
+  width: 100%;
+  font-family: Microsoft YaHei,Tahoma,SimSun,Verdana;
+  color: #777777; }
+
+.container {
+  width: 1090px;
+  margin: 0 auto; }
+
+.full-page {
+  width: 100%;
+  height: 834px; }
+  .full-page .full-img {
+    position: absolute;
+    background: url("../image/head/pic_back.png") bottom center;
+    width: 100%;
+    min-width: 1090px;
+    height: 792px;
+    background-size: cover;
+    z-index: -1;
+    top: 0;
+    left: 0; }
+
+.bus-header .bus-logo {
+  float: left;
+  margin-left: 10px;
+  margin-top: 18px;
+  background: url("../image/head/pic_logo.png") top left no-repeat;
+  background-size: 68px 67px;
+  line-height: 67px;
+  text-indent: 78px;
+  font-size: 28px; }
+.bus-header .bh-wechat {
+  float: right;
+  margin-right: 10px;
+  margin-top: 24px;
+  position: relative; }
+  .bus-header .bh-wechat .wc-img {
+    background: url("../image/head/pic_wechat.png");
+    width: 56px;
+    height: 55px;
+    background-size: cover; }
+  .bus-header .bh-wechat .wc-box {
+    position: absolute;
+    top: 55px;
+    left: -53px;
+    background: url("../image/head/wc_code.png");
+    width: 162px;
+    height: 208px;
+    background-size: cover;
+    display: none; }
+  .bus-header .bh-wechat .wc-img:hover {
+    background: url("../image/head/wc_hover.png"); }
+.bus-header .bh-wechat:hover .wc-box {
+  display: block; }
+.bus-header .bh-qq {
+  float: right;
+  margin-right: 34px;
+  margin-top: 24px;
+  position: relative; }
+  .bus-header .bh-qq .qq-img {
+    background: url("../image/head/pic_qq.png");
+    width: 56px;
+    height: 55px;
+    background-size: cover; }
+  .bus-header .bh-qq .qq-box {
+    position: absolute;
+    top: 55px;
+    left: -52px;
+    background: url("../image/head/qq_box.png");
+    width: 160px;
+    height: 120px;
+    background-size: cover;
+    display: none; }
+  .bus-header .bh-qq .qq-img:hover {
+    background: url("../image/head/qq_hover.png"); }
+.bus-header .bh-qq:hover .qq-box {
+  display: block; }
+
+.page-one {
+  margin-top: 23px; }
+  .page-one .po-title {
+    background: url("../image/head/pic_title.png");
+    width: 579px;
+    height: 101px;
+    background-size: cover;
+    margin: 0 auto; }
+  .page-one .po-download {
+    margin-top: 48px;
+    text-align: center;
+    *padding-left: 320px; }
+    .page-one .po-download .po-btn {
+      display: inline-block;
+      margin: 0 10px;
+      *float: left;
+      *margin-right: 20px; }
+    .page-one .po-download .po-android {
+      background: url("../image/head/android_btn.png");
+      width: 201px;
+      height: 47px;
+      background-size: cover; }
+    .page-one .po-download .po-ios {
+      background: url("../image/head/ios_btn.png");
+      width: 201px;
+      height: 47px;
+      background-size: cover; }
+    .page-one .po-download .po-android:hover {
+      background: url("../image/head/android_hover.png"); }
+    .page-one .po-download .po-ios:hover {
+      background: url("../image/head/ios_hover.png"); }
+
+.po-phone {
+  margin-top: 160px;
+  background: url("../image/head/pic_phone.png");
+  width: 878px;
+  height: 379px;
+  background-size: cover;
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  z-index: 1; }
+  .po-phone .per-one {
+    position: absolute;
+    background: url("../image/head/pic_per1.png");
+    width: 173px;
+    height: 222px;
+    background-size: cover;
+    left: 197px;
+    top: 56px;
+    z-index: 5; }
+    .po-phone .per-one .per-dia1 {
+      background: url("../image/head/pic_dia1.png");
+      width: 226px;
+      height: 111px;
+      background-size: cover;
+      position: absolute;
+      top: -73px;
+      left: 117px;
+      opacity: 0;
+      -webkit-transition: all 1s ease-out 3s;
+      -moz-transition: all 1s ease-out 3s;
+      -o-transition: all 1s ease-out 3s;
+      transition: all 1s ease-out 3s; }
+  .po-phone .per-two {
+    position: absolute;
+    background: url("../image/head/pic_per2.png");
+    width: 106px;
+    height: 140px;
+    background-size: cover;
+    left: 79px;
+    top: 25px;
+    z-index: 3; }
+    .po-phone .per-two .per-dia2 {
+      background: url("../image/head/pic_dia2.png");
+      width: 235px;
+      height: 96px;
+      background-size: cover;
+      position: absolute;
+      top: -110px;
+      left: 29px;
+      opacity: 0;
+      -webkit-transition: all 1s ease-out 1s;
+      -moz-transition: all 1s ease-out 1s;
+      -o-transition: all 1s ease-out 1s;
+      transition: all 1s ease-out 1s; }
+  .po-phone .per-three {
+    position: absolute;
+    background: url("../image/head/pic_per3.png");
+    width: 121px;
+    height: 153px;
+    background-size: cover;
+    left: 511px;
+    top: -82px;
+    z-index: 1; }
+    .po-phone .per-three .per-dia3 {
+      background: url("../image/head/pic_dia3.png");
+      width: 235px;
+      height: 96px;
+      background-size: cover;
+      position: absolute;
+      top: -62px;
+      left: 90px;
+      opacity: 0;
+      -webkit-transition: all 1s ease-out 2s;
+      -moz-transition: all 1s ease-out 2s;
+      -o-transition: all 1s ease-out 2s;
+      transition: all 1s ease-out 2s; }
+  .po-phone .per-four {
+    position: absolute;
+    background: url("../image/head/pic_per4.png");
+    width: 85px;
+    height: 107px;
+    background-size: cover;
+    left: 603px;
+    top: 76px;
+    z-index: 4; }
+  .po-phone .per-five {
+    position: absolute;
+    background: url("../image/head/pic_per5.png");
+    width: 104px;
+    height: 133px;
+    background-size: cover;
+    left: 410px;
+    top: -13px;
+    z-index: 2; }
+
+.po-phone > div {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s; }
+
+.phone-animation .per-one {
+  left: 207px; }
+  .phone-animation .per-one .per-dia1 {
+    top: -53px;
+    opacity: 1; }
+.phone-animation .per-two {
+  left: 84px; }
+  .phone-animation .per-two .per-dia2 {
+    top: -90px;
+    opacity: 1; }
+.phone-animation .per-three {
+  left: 501px; }
+  .phone-animation .per-three .per-dia3 {
+    top: -42px;
+    opacity: 1; }
+.phone-animation .per-four {
+  left: 592px; }
+.phone-animation .per-five {
+  left: 400px; }
+
+.page-two {
+  position: relative;
+  height: 605px;
+  z-index: 1; }
+  .page-two .pt-title {
+    background: url("../image/main/pic_title1.png");
+    width: 360px;
+    height: 120px;
+    background-size: cover;
+    position: absolute;
+    top: 111px;
+    left: 40px; }
+  .page-two .pt-calendar {
+    background: url("../image/main/pic_calendar.png");
+    width: 218px;
+    height: 231px;
+    background-size: cover;
+    position: absolute;
+    bottom: 25px;
+    left: 282px;
+    z-index: 2;
+    -webkit-transition: all 3s ease-out;
+    -moz-transition: all 3s ease-out;
+    -o-transition: all 3s ease-out;
+    transition: all 3s ease-out; }
+  .page-two .pt-right {
+    background: url("../image/main/pic_page1.png");
+    width: 512px;
+    height: 498px;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 537px;
+    z-index: 1;
+    -webkit-transition: all 3s ease-out;
+    -moz-transition: all 3s ease-out;
+    -o-transition: all 3s ease-out;
+    transition: all 3s ease-out; }
+  .page-two .star-one {
+    background: url("../image/main/pic_star1.png");
+    width: 301px;
+    height: 261px;
+    background-size: cover;
+    position: absolute;
+    top: 293px;
+    left: 263px;
+    z-index: 3;
+    opacity: 0;
+    -webkit-transition: all 1s ease-out 3s;
+    -moz-transition: all 1s ease-out 3s;
+    -o-transition: all 1s ease-out 3s;
+    transition: all 1s ease-out 3s; }
+  .page-two .star-two {
+    background: url("../image/main/pic_star2.png");
+    width: 71px;
+    height: 86px;
+    background-size: cover;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: all 1s ease-out 4s;
+    -moz-transition: all 1s ease-out 4s;
+    -o-transition: all 1s ease-out 4s;
+    transition: all 1s ease-out 4s; }
+
+.page-line {
+  background: url("../image/main/pic_line.png");
+  width: 88%;
+  min-width: 1090px;
+  height: 33px;
+  margin: 0 auto;
+  background-size: cover;
+  position: relative;
+  top: -16px;
+  z-index: 2; }
+
+.pt-animation .pt-calendar {
+  left: 332px;
+  opacity: 1; }
+.pt-animation .pt-right {
+  left: 487px;
+  opacity: 1; }
+.pt-animation .star-one {
+  opacity: 1; }
+.pt-animation .star-two {
+  opacity: 1; }
+
+.page-three {
+  position: relative;
+  height: 700px;
+  z-index: 1; }
+  .page-three .pth-title {
+    background: url("../image/main/pic_title2.png");
+    width: 440px;
+    height: 120px;
+    background-size: cover;
+    position: absolute;
+    top: 188px;
+    left: 530px;
+    z-index: 3; }
+    .page-three .pth-title .pth-car {
+      background: url("../image/main/pic_car.png");
+      width: 136px;
+      height: 110px;
+      background-size: cover;
+      position: absolute;
+      top: -25px;
+      left: 195px;
+      z-index: -1; }
+  .page-three .pth-left {
+    background: url("../image/main/pic_page2.png");
+    width: 364px;
+    height: 536px;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 69px;
+    z-index: 2; }
+  .page-three .pth-map {
+    background: url("../image/main/pic_map.png");
+    width: 762px;
+    height: 261px;
+    background-size: cover;
+    position: absolute;
+    bottom: 104px;
+    left: 263px;
+    z-index: 4;
+    -webkit-transition: all 3s ease-out;
+    -moz-transition: all 3s ease-out;
+    -o-transition: all 3s ease-out;
+    transition: all 3s ease-out; }
+    .page-three .pth-map .pth-router {
+      background: url("../image/main/pic_route.png");
+      width: 0;
+      height: 261px;
+      position: absolute;
+      top: -54px;
+      left: -18px;
+      opacity: 0.3;
+      -webkit-transition: all 2s ease-out 3s;
+      -moz-transition: all 2s ease-out 3s;
+      -o-transition: all 2s ease-out 3s;
+      transition: all 2s ease-out 3s; }
+
+.pth-animation .pth-map {
+  bottom: 24px; }
+  .pth-animation .pth-map .pth-router {
+    width: 762px;
+    opacity: 1; }
+
+.page-four {
+  position: relative;
+  height: 687px;
+  z-index: 1; }
+  .page-four .pf-title {
+    background: url("../image/main/pic_title3.png");
+    width: 482px;
+    height: 120px;
+    background-size: cover;
+    position: absolute;
+    top: 108px;
+    left: 12px;
+    z-index: 3; }
+  .page-four .pf-left {
+    background: url("../image/main/pic_bus.png");
+    width: 713px;
+    height: 436px;
+    background-size: cover;
+    position: absolute;
+    top: 242px;
+    left: -93px;
+    z-index: 1; }
+  .page-four .pf-right {
+    background: url("../image/main/pic_page3.png");
+    width: 422px;
+    height: 568px;
+    background-size: cover;
+    position: absolute;
+    top: 118px;
+    left: 655px;
+    z-index: 2;
+    -webkit-transition: all 3s ease-out;
+    -moz-transition: all 3s ease-out;
+    -o-transition: all 3s ease-out;
+    transition: all 3s ease-out; }
+
+.pf-animation .pf-right {
+  left: 540px; }
+
+.bus-footer {
+  width: 100%;
+  height: 90px;
+  margin-top: 180px;
+  background-color: #adadad;
+  text-align: center;
+  line-height: 90px;
+  font-size: 12px;
+  color: #1c1c1c;
+  letter-spacing: 2px; }
+
+/*# sourceMappingURL=style.css.map */

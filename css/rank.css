@@ -1,0 +1,105 @@
+@import url(reset.css);
+.icon, .rank-head, .rank-badge .rb-img, .rank-exp .re-box .re-v, .rank-note .rn-icon {
+  background-image: url("../images/sprite/rank.png"); }
+
+body {
+  background-color: #fff; }
+
+.rank-main {
+  display: none;
+  width: 640px;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0; }
+
+.rank-head {
+  color: #fff;
+  background-position: 0px -264px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 640px;
+  height: 420px; }
+
+.rank-badge {
+  width: 100%;
+  text-align: center;
+  margin-top: 48px; }
+  .rank-badge .rb-img {
+    font-size: 66px;
+    text-align: center;
+    line-height: 160px;
+    text-shadow: 4px 2px 1px rgba(190, 33, 48, 0.3);
+    margin: 0 auto;
+    background-position: 0px -64px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    width: 200px;
+    height: 200px; }
+  .rank-badge .rb-text {
+    margin-top: 20px;
+    font-size: 24px; }
+    .rank-badge .rb-text span {
+      color: #ffdf34; }
+
+.rank-exp {
+  width: 100%; }
+  .rank-exp .re-box {
+    text-align: center; }
+    .rank-exp .re-box .re-v {
+      background-position: 0px -32px;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      display: block;
+      width: 32px;
+      height: 32px;
+      display: inline-block; }
+    .rank-exp .re-box .re-num {
+      position: relative;
+      left: -10px;
+      top: -3px;
+      font-size: 20px; }
+  .rank-exp .re-text {
+    text-align: center;
+    font-size: 24px; }
+
+.re-img {
+  display: inline-block;
+  margin: 48px 12px 20px 2px;
+  width: 440px;
+  height: 6px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  text-align: left; }
+  .re-img .fill {
+    width: 20%;
+    height: 6px;
+    border-radius: 5px;
+    background: #ffffff;
+    display: inline-block;
+    position: relative;
+    top: -7px; }
+
+.rank-note {
+  border-top: 16px #f5f5f5 solid;
+  padding-top: 20px; }
+  .rank-note .rn-icon {
+    margin-left: 32px;
+    float: left;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    width: 32px;
+    height: 32px; }
+  .rank-note .rn-content {
+    margin-left: 72px;
+    margin-right: 72px; }
+    .rank-note .rn-content .rn-title {
+      font-size: 28px;
+      color: #333;
+      line-height: 32px; }
+    .rank-note .rn-content .rn-text {
+      font-size: 24px;
+      color: #666;
+      margin-top: 20px; }

@@ -1,0 +1,11 @@
+{
+  "action": "",
+  "code": 0,
+  "data": {
+    "defeated": "87%",
+    "empiricalValueToNextGrade": "456555",
+    "liveGrade": "43",
+    "uid": "12345"
+  },
+  "message": ""
+}

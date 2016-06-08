@@ -1,0 +1,214 @@
+@import url(reset.css);
+.icon, .rm-head, .rl-nav .right-arrow, .modal .dialog-ok .ok {
+  background-image: url("../images/sprite/red.png"); }
+
+html {
+  height: 100%; }
+
+body {
+  background-color: #fff;
+  width: 640px;
+  display: none;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0; }
+
+.red-main {
+  width: 100%; }
+
+.rm-head {
+  background-position: 0px -175px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 640px;
+  height: 296px;
+  color: #fff; }
+
+.today-income {
+  margin-left: 32px;
+  margin-top: 32px; }
+  .today-income .ti-text {
+    font-size: 26px;
+    line-height: 26px; }
+  .today-income .ti-sum {
+    margin-top: 18px;
+    line-height: 72px;
+    font-size: 72px;
+    height: 72px; }
+
+.all-income {
+  margin-left: 32px; }
+  .all-income .ai-text {
+    margin-top: 48px;
+    font-size: 20px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.7); }
+  .all-income .ai-sum {
+    margin-top: 18px;
+    font-size: 32px;
+    line-height: 32px;
+    height: 32px; }
+
+.rm-list {
+  width: 100%;
+  background-color: #f5f5f5;
+  border-bottom: 1px #eee solid;
+  color: #666; }
+
+.rl-nav {
+  width: 100%;
+  height: 84px;
+  line-height: 84px;
+  background-color: #fff; }
+  .rl-nav:nth-child(1) {
+    margin-bottom: 16px; }
+  .rl-nav .nav-left {
+    margin-left: 24px;
+    font-size: 26px; }
+  .rl-nav .nav-right {
+    float: right;
+    margin-right: 24px;
+    color: #333;
+    font-size: 26px; }
+  .rl-nav .right-arrow {
+    float: right;
+    margin-right: 12px;
+    margin-top: 20px;
+    display: block;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    width: 44px;
+    height: 45px; }
+
+#turn_record:hover {
+  background-color: #eee; }
+
+.rm-bottom {
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  padding-bottom: 200px; }
+  .rm-bottom .rm-btn {
+    width: 400px;
+    height: 72px;
+    background-color: #fdbdc4;
+    border-radius: 36px;
+    line-height: 72px;
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto; }
+
+.modal {
+  display: none;
+  height: 2000px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden; }
+  .modal .dialog-ok {
+    height: 420px;
+    width: 500px;
+    background: #ffffff;
+    margin: 200px auto;
+    border-radius: 10px;
+    text-align: center; }
+    .modal .dialog-ok > div {
+      display: inline-block;
+      width: 100%; }
+    .modal .dialog-ok .gap1 {
+      height: 32px; }
+    .modal .dialog-ok .ok {
+      background-position: 0px -45px;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      display: block;
+      width: 200px;
+      height: 130px;
+      display: inline-block; }
+    .modal .dialog-ok .gap2 {
+      height: 10px; }
+    .modal .dialog-ok .status {
+      color: #666666;
+      font-size: 30px; }
+    .modal .dialog-ok .gap3 {
+      height: 20px; }
+    .modal .dialog-ok .text {
+      color: #999999;
+      font-size: 24px; }
+    .modal .dialog-ok .gap4 {
+      height: 60px; }
+    .modal .dialog-ok .btn {
+      width: 300px;
+      height: 72px;
+      border-radius: 36px;
+      background: #f95e6f;
+      color: #ffffff;
+      line-height: 72px;
+      font-size: 28px; }
+  .modal .dialog-confirm {
+    height: 410px;
+    width: 500px;
+    background: #ffffff;
+    margin: 200px auto;
+    border-radius: 10px;
+    text-align: center; }
+    .modal .dialog-confirm > div {
+      width: 100%; }
+    .modal .dialog-confirm .gap1 {
+      height: 50px; }
+    .modal .dialog-confirm .explain {
+      font-size: 24px;
+      color: #666666;
+      height: 24px; }
+    .modal .dialog-confirm .gap12 {
+      height: 18px; }
+    .modal .dialog-confirm .sum {
+      font-size: 60px;
+      height: 60px;
+      margin-top: 18px;
+      color: #333333; }
+      .modal .dialog-confirm .sum sub {
+        font-size: 24px;
+        color: #333333;
+        position: relative;
+        top: -2px; }
+    .modal .dialog-confirm .gap2 {
+      height: 15px; }
+    .modal .dialog-confirm .warning {
+      height: 60px;
+      color: #999999;
+      font-size: 22px;
+      width: 440px;
+      text-align: left;
+      line-height: 33px;
+      margin: 0 auto; }
+    .modal .dialog-confirm .gap3 {
+      height: 34px; }
+    .modal .dialog-confirm .btns {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+      .modal .dialog-confirm .btns .btn {
+        width: 200px;
+        height: 70px;
+        border-radius: 35px;
+        line-height: 70px;
+        font-size: 28px; }
+        .modal .dialog-confirm .btns .btn:nth-child(1) {
+          background: #f5f5f5;
+          border: 1px solid #d1d1d1;
+          color: #666666; }
+        .modal .dialog-confirm .btns .btn:nth-child(2) {
+          background: #fdbdc4;
+          color: #ffffff; }

@@ -1,0 +1,62 @@
+@import "reset.css";
+@import "sprite/note";
+
+html,body{
+  background: #fcdddd;
+}
+.container {
+  width:640px;
+  display: none;
+  transform-origin: 0 0;
+
+  .note-head{
+//    width:640px;
+//    height:300px;
+//    background:url('../images/pnote_head.png');
+//    background-size:cover;
+    @include sprite($pnote_head);
+    @extend .icon;
+  }
+
+  .note-text{
+    margin:20px 30px;
+    font-size:26px;
+    color:#7e4343;
+    line-height:35px;
+  }
+  .note-content{
+//    width:640px;
+//    height:1361px;
+//    background:url('../images/pnote_intro.png');
+//    background-size:cover;
+    @include sprite($pnote_intro);
+    @extend .icon;
+  }
+
+  .note-extra{
+    .ne-text{
+      margin:0 30px;
+      font-size:26px;
+      color:#7e4343;
+      line-height:35px;
+      text-align:center;
+    }
+    .ne-btn{
+      margin-top:16px;
+      margin-left:120px;
+//      width:400px;
+//      height:70px;
+//      background:url('../images/pnote_btn.png');
+//      background-size:cover;
+      @include sprite($pnote_btn);
+      @extend .icon;
+    }
+
+  }
+
+  .note-space{
+    height:30px;
+  }
+
+
+}

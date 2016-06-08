@@ -1,0 +1,620 @@
+
+html, body, div{
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+.clearfix:before,.clearfix:after{
+  content:"";
+  display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix {
+  *zoom: 1; /*IE/7/6*/
+}
+
+html,body{
+  background-color:#ffffff;
+  width:100%;
+  font-family:Microsoft YaHei,Tahoma,SimSun,Verdana;
+  color:#777777;
+}
+
+
+//主题内容
+.container{
+  width:1090px;
+  margin:0 auto;
+}
+
+//首屏
+.full-page{
+  width:100%;
+  height:834px;
+
+//  背景图
+  .full-img{
+    position:absolute;
+    background:url('../image/head/pic_back.png') bottom center;
+    width:100%;
+    min-width:1090px;
+    height:792px;
+    background-size:cover;
+    z-index:-1;
+    top:0;
+    left:0;
+  }
+}
+
+//头部
+.bus-header {
+
+  .bus-logo {
+    float: left;
+    margin-left: 10px;
+    margin-top:18px;
+    background: url('../image/head/pic_logo.png') top left no-repeat;
+    background-size: 68px 67px;
+    line-height: 67px;
+    text-indent: 78px;
+    font-size: 28px;
+  }
+
+  .bh-wechat {
+    float: right;
+    margin-right: 10px;
+    margin-top: 24px;
+    position: relative;
+    .wc-img {
+      background: url('../image/head/pic_wechat.png');
+      width: 56px;
+      height: 55px;
+      background-size: cover;
+    }
+    .wc-box {
+      position: absolute;
+      top: 55px;
+      left: -53px;
+      background: url('../image/head/wc_code.png');
+      width: 162px;
+      height: 208px;
+      background-size: cover;
+      display: none;
+    }
+
+    .wc-img:hover {
+      background: url('../image/head/wc_hover.png');
+    }
+  }
+
+  .bh-wechat:hover {
+    .wc-box {
+      display: block;
+    }
+  }
+
+  .bh-qq {
+    float: right;
+    margin-right: 34px;
+    margin-top: 24px;
+    position: relative;
+    .qq-img {
+      background: url('../image/head/pic_qq.png');
+      width: 56px;
+      height: 55px;
+      background-size: cover;
+    }
+    .qq-box {
+      position: absolute;
+      top: 55px;
+      left: -52px;
+      background: url('../image/head/qq_box.png');
+      width: 160px;
+      height: 120px;
+      background-size: cover;
+      display: none;
+    }
+
+    .qq-img:hover {
+      background: url('../image/head/qq_hover.png');
+    }
+  }
+
+  .bh-qq:hover {
+    .qq-box {
+
+      display: block;
+    }
+  }
+}
+
+
+// 第一页
+  .page-one{
+    margin-top:23px;
+    .po-title{
+      background:url('../image/head/pic_title.png');
+      width:579px;
+      height:101px;
+      background-size:cover;
+      margin:0 auto;
+    }
+
+    .po-download{
+      margin-top:48px;
+      text-align:center;
+      *padding-left:320px;
+
+      .po-btn {
+        display: inline-block;
+        margin: 0 10px;
+        *float:left;
+       *margin-right:20px;
+      }
+
+
+      .po-android{
+        background:url('../image/head/android_btn.png');
+        width:201px;
+        height:47px;
+        background-size:cover;
+      }
+
+      .po-ios{
+        background:url('../image/head/ios_btn.png');
+        width:201px;
+        height:47px;
+        background-size:cover;
+      }
+
+      .po-android:hover{
+        background:url('../image/head/android_hover.png');
+      }
+
+      .po-ios:hover{
+        background:url('../image/head/ios_hover.png');
+      }
+    }
+
+
+
+  }
+
+//  iphone图动画前
+  .po-phone{
+    margin-top:160px;
+    background:url('../image/head/pic_phone.png');
+    width:878px;
+    height:379px;
+    background-size:cover;
+    position:relative;
+    float:right;
+    margin-right:10px;
+    z-index:1;
+
+
+
+    .per-one{
+      position:absolute;
+      background:url('../image/head/pic_per1.png');
+      width:173px;
+      height:222px;
+      background-size:cover;
+      left:197px;
+      top:56px;
+      z-index:5;
+
+
+      .per-dia1{
+        background:url('../image/head/pic_dia1.png');
+        width:226px;
+        height:111px;
+        background-size:cover;
+        position:absolute;
+        top:-73px;
+        left:117px;
+        opacity:0;
+        -webkit-transition:all 1s ease-out 3s;
+        -moz-transition:all 1s ease-out 3s;
+        -o-transition:all 1s ease-out 3s;
+        transition:all 1s ease-out 3s;
+      }
+    }
+
+    .per-two{
+      position:absolute;
+      background:url('../image/head/pic_per2.png');
+      width:106px;
+      height:140px;
+      background-size:cover;
+      left:79px;
+      top:25px;
+      z-index:3;
+
+
+      .per-dia2{
+        background:url('../image/head/pic_dia2.png');
+        width:235px;
+        height:96px;
+        background-size:cover;
+        position:absolute;
+        top:-110px;
+        left:29px;
+        opacity:0;
+        -webkit-transition:all 1s ease-out 1s;
+        -moz-transition:all 1s ease-out 1s;
+        -o-transition:all 1s ease-out 1s;
+        transition:all 1s ease-out 1s;
+      }
+    }
+
+    .per-three{
+      position:absolute;
+      background:url('../image/head/pic_per3.png');
+      width:121px;
+      height:153px;
+      background-size:cover;
+      left:511px;
+      top:-82px;
+      z-index:1;
+
+
+      .per-dia3{
+        background:url('../image/head/pic_dia3.png');
+        width:235px;
+        height:96px;
+        background-size:cover;
+        position:absolute;
+        top:-62px;
+        left:90px;
+        opacity:0;
+        -webkit-transition:all 1s ease-out 2s;
+        -moz-transition:all 1s ease-out 2s;
+        -o-transition:all 1s ease-out 2s;
+        transition:all 1s ease-out 2s;
+      }
+    }
+
+    .per-four {
+      position: absolute;
+      background: url('../image/head/pic_per4.png');
+      width: 85px;
+      height: 107px;
+      background-size: cover;
+      left: 603px;
+      top: 76px;
+      z-index: 4;
+    }
+
+    .per-five {
+      position: absolute;
+      background: url('../image/head/pic_per5.png');
+      width: 104px;
+      height: 133px;
+      background-size: cover;
+      left: 410px;
+      top: -13px;
+      z-index: 2;
+    }
+
+
+  }
+
+.po-phone>div{
+  -webkit-transition:all 1s;
+  -moz-transition:all 1s;
+  -o-transition:all 1s;
+  transition:all 1s;
+}
+
+//iphone动画后
+.phone-animation{
+  .per-one{
+    left:207px;
+
+
+    .per-dia1{
+      top:-53px;
+      opacity:1;
+    }
+  }
+
+  .per-two{
+    left:84px;
+
+    .per-dia2{
+      top:-90px;
+      opacity:1;
+    }
+  }
+
+  .per-three{
+    left:501px;
+
+    .per-dia3{
+      top:-42px;
+      opacity:1;
+    }
+  }
+
+  .per-four {
+    left: 592px;
+  }
+
+  .per-five {
+    left: 400px;
+  }
+}
+
+//第二页动画前
+.page-two{
+  position:relative;
+  height:605px;
+  z-index:1;
+
+//  文字
+  .pt-title{
+    background:url('../image/main/pic_title1.png');
+    width:360px;
+    height:120px;
+    background-size:cover;
+    position:absolute;
+    top:111px;
+    left:40px;
+
+  }
+
+//  日历
+  .pt-calendar{
+    background:url('../image/main/pic_calendar.png');
+    width:218px;
+    height:231px;
+    background-size:cover;
+    position:absolute;
+    bottom:25px;
+    left:282px;
+    z-index:2;
+    -webkit-transition:all 3s ease-out;
+    -moz-transition:all 3s ease-out;
+    -o-transition:all 3s ease-out;
+    transition:all 3s ease-out;
+  }
+
+//  截图
+  .pt-right{
+    background:url('../image/main/pic_page1.png');
+    width:512px;
+    height:498px;
+    background-size:cover;
+    position:absolute;
+    bottom:0;
+    left:537px;
+    z-index:1;
+    -webkit-transition:all 3s ease-out;
+    -moz-transition:all 3s ease-out;
+    -o-transition:all 3s ease-out;
+    transition:all 3s ease-out;
+  }
+
+//  星星
+  .star-one{
+    background:url('../image/main/pic_star1.png');
+    width:301px;
+    height:261px;
+    background-size:cover;
+    position:absolute;
+    top:293px;
+    left:263px;
+    z-index:3;
+    opacity:0;
+    -webkit-transition:all 1s ease-out 3s;
+    -moz-transition:all 1s ease-out 3s;
+    -o-transition:all 1s ease-out 3s;
+    transition:all 1s ease-out 3s;
+  }
+
+  .star-two{
+    background:url('../image/main/pic_star2.png');
+    width:71px;
+    height:86px;
+    background-size:cover;
+    position:absolute;
+    top:38px;
+    left:0;
+    opacity:0;
+    -webkit-transition:all 1s ease-out 4s;
+    -moz-transition:all 1s ease-out 4s;
+    -o-transition:all 1s ease-out 4s;
+    transition:all 1s ease-out 4s;
+  }
+
+}
+
+//分割线
+.page-line{
+  background:url('../image/main/pic_line.png');
+  width:88%;
+  min-width:1090px;
+  height:33px;
+  margin:0 auto;
+  background-size:cover;
+  position:relative;
+  top:-16px;
+  z-index:2;
+}
+
+//第二页动画后
+.pt-animation{
+  .pt-calendar{
+    left:332px;
+    opacity:1;
+  }
+
+  .pt-right{
+    left:487px;
+    opacity:1;
+  }
+
+  .star-one{
+    opacity:1;
+  }
+
+  .star-two{
+    opacity:1;
+  }
+}
+
+//第三页
+.page-three{
+  position:relative;
+  height:700px;
+  z-index:1;
+
+  .pth-title{
+    background:url('../image/main/pic_title2.png');
+    width:440px;
+    height:120px;
+    background-size:cover;
+    position:absolute;
+    top:188px;
+    left:530px;
+    z-index:3;
+
+    .pth-car{
+      background:url('../image/main/pic_car.png');
+      width:136px;
+      height:110px;
+      background-size:cover;
+      position:absolute;
+      top:-25px;
+      left:195px;
+      z-index:-1;
+    }
+
+  }
+
+  .pth-left{
+    background:url('../image/main/pic_page2.png');
+    width:364px;
+    height:536px;
+    background-size:cover;
+    position:absolute;
+    bottom:0;
+    left:69px;
+    z-index:2;
+  }
+
+//  地图动画前
+  .pth-map{
+    background:url('../image/main/pic_map.png');
+    width:762px;
+    height:261px;
+    background-size:cover;
+    position:absolute;
+    bottom:104px;
+    left:263px;
+    z-index:4;
+    -webkit-transition:all 3s ease-out;
+    -moz-transition:all 3s ease-out;
+    -o-transition:all 3s ease-out;
+    transition:all 3s ease-out;
+
+    .pth-router{
+      background:url('../image/main/pic_route.png');
+      width:0;
+      height:261px;
+      position:absolute;
+      top:-54px;
+      left:-18px;
+      opacity:0.3;
+      -webkit-transition:all 2s ease-out 3s;
+      -moz-transition:all 2s ease-out 3s;
+      -o-transition:all 2s ease-out 3s;
+      transition:all 2s ease-out 3s;
+    }
+  }
+}
+
+//地图动画后
+.pth-animation{
+  .pth-map{
+    bottom:24px;
+
+    .pth-router{
+      width:762px;
+      opacity:1;
+    }
+  }
+}
+
+//第四页动画前
+.page-four{
+  position:relative;
+  height:687px;
+  z-index:1;
+
+  .pf-title{
+    background:url('../image/main/pic_title3.png');
+    width:482px;
+    height:120px;
+    background-size:cover;
+    position:absolute;
+    top:108px;
+    left:12px;
+    z-index:3;
+  }
+
+  .pf-left{
+    background:url('../image/main/pic_bus.png');
+    width:713px;
+    height:436px;
+    background-size:cover;
+    position:absolute;
+    top:242px;
+    left:-93px;
+    z-index:1;
+  }
+
+  .pf-right{
+    background:url('../image/main/pic_page3.png');
+    width:422px;
+    height:568px;
+    background-size:cover;
+    position:absolute;
+    top:118px;
+    left:655px;
+    z-index:2;
+    -webkit-transition:all 3s ease-out;
+    -moz-transition:all 3s ease-out;
+    -o-transition:all 3s ease-out;
+    transition:all 3s ease-out;
+
+  }
+
+}
+
+
+.pf-animation{
+
+  .pf-right{
+    left:540px;
+  }
+}
+
+.bus-footer{
+  width:100%;
+  height:90px;
+  margin-top:180px;
+  background-color:#adadad;
+  text-align:center;
+  line-height:90px;
+  font-size:12px;
+  color: #1c1c1c;
+  letter-spacing:2px;
+
+}

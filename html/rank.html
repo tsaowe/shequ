@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no" />
+    <title>我的直播等级</title>
+    <link rel="stylesheet" type="text/css" href="../css/rank.css">
+    <script>
+        setTimeout(function () {
+            var ratio = window.screen.width / 640;
+            var style = '.rank-main{-webkit-transform:scale('+ratio+');transform: scale('+ratio+');display:block;}';
+            var stl = document.createElement('style');
+            stl.innerHTML = style;
+            document.head.appendChild(stl);
+            var body = document.getElementsByTagName('body')[0];
+            body.style.height  = document.body.offsetHeight * ratio + 'px';
+        },0);
+    </script>
+
+</head>
+<body>
+<div class="rank-main">
+    <div class="rank-head">
+        <div class="rank-badge">
+            <div class="rb-img"><span id="rb_count"></span></div>
+            <div class="rb-text">
+                击败了<span id="rb_percent"></span>的用户
+            </div>
+        </div>
+        <div class="rank-exp">
+            <div class="re-box">
+                <span class="re-v"></span><span class="re-num" id="re_prenum"></span>
+                <span class="re-img">
+                    <span class="fill" id="re_progress"></span>
+                </span>
+                <span class="re-v"></span><span class="re-num" id="re_afternum"></span>
+            </div>
+            <div class="re-text">
+               距离升级还差<span id="re_expnum"></span>经验值
+            </div>
+        </div>
+
+    </div>
+    <div class="rank-note">
+        <div class="rn-icon"></div>
+        <div class="rn-content">
+            <div class="rn-title">如何获得经验值</div>
+            <div class="rn-text">1.自己直播或者观看他人直播都可以增加经验</div>
+            <div class="rn-text">2.给主播送礼物升级最快~</div>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="../lib/zepto.min.js"></script>
+<script src="../js/rank.js"></script>
+<script src="../lib/sea.min.js"></script>
+<script type="text/javascript" src="http://f0.jmstatic.com/static_common/dist/hybrid/20150917/js/hybrid/msdk.js" data-main="hybrid/msdk"></script>
+<script>
+    seajs.use('hybrid/msdk', function(ms){
+        ms.share.hide();
+    });
+
+</script>
+</body>
+</html>
