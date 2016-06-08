@@ -35,6 +35,9 @@ function initData(){
                     showMsg(res.message);
                 }
             }
+        },
+        error:function () {
+            console.log(arguments)
         }
 
     });
