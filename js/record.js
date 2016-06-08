@@ -1,11 +1,9 @@
 
 //初始化数据
 function initData(){
-    $.ajax({
-        type: "post",
+    $.getJSON({
         url: "../data/record.json",
         dataType:'json',
-        //jsonp:'callback',
         success:function(res){
             if(res.code === 0){
                 if(res.data && res.data.length>0){
