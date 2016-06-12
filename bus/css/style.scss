@@ -19,12 +19,22 @@ html, body, div{
 }
 
 html,body{
-  background-color:#ffffff;
+  //background-color:#ffffff;
   width:100%;
   font-family:Microsoft YaHei,Tahoma,SimSun,Verdana;
   color:#777777;
 }
-
+.full-img{
+  position:absolute;
+  background:url('../image/head/pic_back.png') bottom center;
+  width:100%;
+  min-width:1090px;
+  height:792px;
+  background-size:cover;
+  top:0;
+  left:0;
+  z-index:-1;
+}
 
 //主题内容
 .container{
@@ -38,16 +48,7 @@ html,body{
   height:834px;
 
 //  背景图
-  .full-img{
-    position:absolute;
-    background:url('../image/head/pic_back.png') bottom center;
-    width:100%;
-    min-width:1090px;
-    height:792px;
-    background-size:cover;
-    top:0;
-    left:0;
-  }
+
 }
 
 //头部
