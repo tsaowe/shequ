@@ -491,7 +491,29 @@ html, body {
 
 .bus-footer {
   width: 100%;
-  margin-top: 40px; }
+  margin-top: 40px;
+  background-color: #c9c9c9;
+  padding-top: 60px;
+  padding-bottom: 56px;
+  border-top: 2px solid #b9b9b9;
+  text-align: center; }
+  .bus-footer .bf-box {
+    text-align: left;
+    display: inline-block;
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 2px; }
+    .bus-footer .bf-box .bf-line {
+      margin-top: 20px; }
+    .bus-footer .bf-box span.bf-text {
+      margin-left: 50px; }
+    .bus-footer .bf-box .bf-logos {
+      margin-top: 30px; }
+      .bus-footer .bf-box .bf-logos img {
+        width: 127px;
+        height: 48px;
+        margin-right: 10px;
+        border-radius: 5px; }
 
 .bus-footer img {
   width: 100%; }
