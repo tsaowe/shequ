@@ -127,6 +127,7 @@ html, body {
     *padding-left: 320px; }
     .page-one .po-download .po-btn {
       display: inline-block;
+      background-color: #ffffff;
       margin: 0 10px;
       width: 200px;
       height: 43px;
@@ -289,7 +290,7 @@ html, body {
   .page-two .pt-calendar {
     background: url("../image/main/pic_calendar.png");
     width: 208px;
-    height: 224px;
+    height: 221px;
     background-size: cover;
     position: absolute;
     bottom: 44px;
