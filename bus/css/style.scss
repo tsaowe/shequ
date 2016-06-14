@@ -417,7 +417,7 @@ html,body{
     background-size:cover;
     position:absolute;
     bottom:0;
-    left:563px;
+    left:513px;
     z-index:1;
     -webkit-transition:all 3s ease-out;
     -moz-transition:all 3s ease-out;
@@ -545,13 +545,13 @@ html,body{
     height:269px;
     background-size:cover;
     position:absolute;
-    bottom:138px;
+    bottom:100px;
     left:271px;
     z-index:4;
-    -webkit-transition:all 3s ease-out;
-    -moz-transition:all 3s ease-out;
-    -o-transition:all 3s ease-out;
-    transition:all 3s ease-out;
+    -webkit-transition:all 1s ease-out;
+    -moz-transition:all 1s ease-out;
+    -o-transition:all 1s ease-out;
+    transition:all 1s ease-out;
 
     .pth-router{
       background:url('../image/main/pic_route.png');
@@ -562,10 +562,10 @@ html,body{
       top:68px;
       left:147px;
       z-index:1;
-      -webkit-transition:all 2s ease-out 3.5s;
-      -moz-transition:all 2s ease-out 3.5s;
-      -o-transition:all 2s ease-out 3.5s;
-      transition:all 2s ease-out 3.5s;
+      -webkit-transition:all 2s ease-out 1s;
+      -moz-transition:all 2s ease-out 1s;
+      -o-transition:all 2s ease-out 1s;
+      transition:all 2s ease-out 1s;
     }
 
     .pth-start{
@@ -578,10 +578,10 @@ html,body{
       left:84px;
       z-index:2;
       opacity:0;
-      -webkit-transition:all 0.5s ease-out 3s;
-      -moz-transition:all 0.5s ease-out 3s;
-      -o-transition:all 0.5s ease-out 3s;
-      transition:all 0.5s ease-out 3s;
+      -webkit-transition:all 0.5s ease-out 1s;
+      -moz-transition:all 0.5s ease-out 1s;
+      -o-transition:all 0.5s ease-out 1s;
+      transition:all 0.5s ease-out 1s;
     }
 
     .pth-end{
@@ -594,10 +594,10 @@ html,body{
       left:546px;
       opacity:0;
       z-index:2;
-      -webkit-transition:all 0.5s ease-out 5.5s;
-      -moz-transition:all 0.5s ease-out 5.5s;
-      -o-transition:all 0.5s ease-out 5.5s;
-      transition:all 0.5s ease-out 5.5s;
+      -webkit-transition:all 0.5s ease-out 3s;
+      -moz-transition:all 0.5s ease-out 3s;
+      -o-transition:all 0.5s ease-out 3s;
+      transition:all 0.5s ease-out 3s;
     }
   }
 }
@@ -648,11 +648,11 @@ html,body{
   .pf-right{
     background:url('../image/main/pic_page3.png');
     width:398px;
-    height:530px;
+    height:521px;
     background-size:cover;
     position:absolute;
     top:126px;
-    left:712px;
+    left:650px;
     z-index:2;
     -webkit-transition:all 3s ease-out;
     -moz-transition:all 3s ease-out;
