@@ -144,7 +144,7 @@ html, body {
         display: inline-block;
         line-height: 38px;
         margin-right: 10px;
-        font-size: 30px; }
+        font-size: 24px; }
         .page-one .po-download .po-btn .iconfont.po-android {
           line-height: 36px; }
     .page-one .po-download .po-btn:hover {
@@ -462,7 +462,8 @@ html, body {
 .page-four {
   position: relative;
   height: 687px;
-  z-index: 1; }
+  z-index: 1;
+  padding-bottom: 100px; }
   .page-four .pf-title {
     background: url("../image/main/pic_title3.png");
     width: 479px;
@@ -503,7 +504,7 @@ html, body {
   margin-top: 40px;
   background-color: #c9c9c9;
   padding-top: 35px;
-  padding-bottom: 35px;
+  padding-bottom: 39px;
   border-top: 2px solid #b9b9b9;
   text-align: center; }
   .bus-footer .bf-box {
@@ -513,11 +514,11 @@ html, body {
     color: #000000;
     letter-spacing: 2px; }
     .bus-footer .bf-box .bf-line {
-      margin-top: 14px; }
+      margin-top: 1px; }
     .bus-footer .bf-box span.bf-text {
       margin-left: 50px; }
     .bus-footer .bf-box .bf-logos {
-      margin-top: 26px; }
+      margin-top: 12px; }
       .bus-footer .bf-box .bf-logos img {
         margin-right: 10px;
         border-radius: 5px; }
