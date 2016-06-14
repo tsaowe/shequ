@@ -102,6 +102,12 @@ html, body {
     height: 116px;
     background-size: cover;
     display: none; }
+    .bus-header .bh-qq .qq-box span {
+      position: relative;
+      font-size: 14px;
+      top: 66px;
+      left: 19px;
+      color: rgba(29, 29, 29, 0.96); }
   .bus-header .bh-qq .qq-img:hover {
     opacity: 0.5; }
 .bus-header .bh-qq:hover .qq-box {
@@ -135,9 +141,11 @@ html, body {
       .page-one .po-download .po-btn .iconfont {
         color: #4cc957;
         display: inline-block;
-        line-height: 43px;
+        line-height: 38px;
         margin-right: 10px;
         font-size: 30px; }
+        .page-one .po-download .po-btn .iconfont.po-android {
+          line-height: 36px; }
     .page-one .po-download .po-btn:hover {
       background-color: #4cc957;
       border: 2px solid #4cc957;
@@ -493,7 +501,7 @@ html, body {
   width: 100%;
   margin-top: 40px;
   background-color: #c9c9c9;
-  padding-top: 60px;
+  padding-top: 56px;
   padding-bottom: 56px;
   border-top: 2px solid #b9b9b9;
   text-align: center; }
@@ -504,16 +512,23 @@ html, body {
     color: #000000;
     letter-spacing: 2px; }
     .bus-footer .bf-box .bf-line {
-      margin-top: 20px; }
+      margin-top: 14px; }
     .bus-footer .bf-box span.bf-text {
       margin-left: 50px; }
     .bus-footer .bf-box .bf-logos {
-      margin-top: 30px; }
+      margin-top: 26px; }
       .bus-footer .bf-box .bf-logos img {
-        width: 127px;
-        height: 48px;
         margin-right: 10px;
         border-radius: 5px; }
+        .bus-footer .bf-box .bf-logos img:nth-child(1) {
+          width: 124px;
+          height: 46px; }
+        .bus-footer .bf-box .bf-logos img:nth-child(2) {
+          width: 125px;
+          height: 46px; }
+        .bus-footer .bf-box .bf-logos img:nth-child(3) {
+          width: 123px;
+          height: 46px; }
 
 .bus-footer img {
   width: 100%; }

@@ -127,6 +127,13 @@ html,body{
       height: 116px;
       background-size: cover;
       display: none;
+      span {
+        position: relative;
+        font-size: 14px;
+        top:66px;
+        left:19px;
+        color: rgba(29, 29, 29, 0.96);
+      }
     }
 
     .qq-img:hover {
@@ -176,9 +183,12 @@ html,body{
         .iconfont{
           color:#4cc957;
           display:inline-block;
-          line-height:43px;
+          line-height:38px;
           margin-right:10px;
           font-size:30px;
+          &.po-android{
+            line-height: 36px;
+          }
         }
       }
 
@@ -665,7 +675,7 @@ html,body{
   width:100%;
   margin-top:40px;
   background-color:#c9c9c9;
-  padding-top:60px;
+  padding-top:56px;
   padding-bottom:56px;
   border-top:2px solid #b9b9b9;
   text-align:center;
@@ -679,7 +689,7 @@ html,body{
     letter-spacing:2px;
 
     .bf-line{
-      margin-top:20px;
+      margin-top:14px;
     }
 
     span.bf-text{
@@ -687,14 +697,23 @@ html,body{
     }
 
     .bf-logos{
-      margin-top:30px;
+      margin-top:26px;
 
       img{
-        width:127px;
-        height:48px;
         margin-right:10px;
         border-radius:5px;
-
+        &:nth-child(1){
+          width:124px;
+          height:46px;
+        }
+        &:nth-child(2){
+          width:125px;
+          height:46px;
+        }
+        &:nth-child(3){
+          width:123px;
+          height:46px;
+        }
       }
     }
   }
