@@ -80,13 +80,15 @@ html,body{
 .bus-header {
 
   .bus-logo {
+    @include sprite($pic_logo);
+    @extend .head;
     float: left;
     margin-left: 10px;
     margin-top:18px;
-    background: url('../image/head/pic_logo.png');
-    width: 147px;
-    height: 42px;
-    background-size: cover;
+//    background: url('../image/head/pic_logo.png');
+//    width: 147px;
+//    height: 42px;
+//    background-size: cover;
   }
 
   .bh-wechat {

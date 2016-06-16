@@ -1,4 +1,4 @@
-.head, .bus-header .bh-wechat .wc-img, .bus-header .bh-wechat .wc-box, .bus-header .bh-qq .qq-img, .bus-header .bh-qq .qq-box, .page-one .po-title {
+.head, .bus-header .bus-logo, .bus-header .bh-wechat .wc-img, .bus-header .bh-wechat .wc-box, .bus-header .bh-qq .qq-img, .bus-header .bh-qq .qq-box, .page-one .po-title {
   background-image: url("../image/sprite/head.png"); }
 
 .main, .po-phone, .po-phone .per-one, .po-phone .per-one .per-dia1, .po-phone .per-two, .po-phone .per-two .per-dia2, .po-phone .per-three, .po-phone .per-three .per-dia3, .po-phone .per-four, .po-phone .per-five {
@@ -50,7 +50,7 @@ html, body {
   font-family: Microsoft YaHei,Tahoma,SimSun,Verdana;
   color: #777777; }
 
-.head, .bus-header .bh-wechat .wc-img, .bus-header .bh-wechat .wc-box, .bus-header .bh-qq .qq-img, .bus-header .bh-qq .qq-box, .page-one .po-title, .main, .po-phone, .po-phone .per-one, .po-phone .per-one .per-dia1, .po-phone .per-two, .po-phone .per-two .per-dia2, .po-phone .per-three, .po-phone .per-three .per-dia3, .po-phone .per-four, .po-phone .per-five, .page1, .page-two .pt-title, .page-two .pt-calendar, .page-two .pt-right, .page-two .star-one, .page-two .star-two, .page-two .star-three, .page2, .page-three .pth-title, .page-three .pth-left, .page-three .pth-map, .page-three .pth-map .pth-router, .page-three .pth-map .pth-start, .page-three .pth-map .pth-end, .page3, .page-four .pf-title, .page-four .pf-left, .page-four .pf-right, .foot, .bus-footer .bf-box .bf-logos span.bf-logo:nth-child(1), .bus-footer .bf-box .bf-logos span.bf-logo:nth-child(2), .bus-footer .bf-box .bf-logos span.bf-logo:nth-child(3) {
+.head, .bus-header .bus-logo, .bus-header .bh-wechat .wc-img, .bus-header .bh-wechat .wc-box, .bus-header .bh-qq .qq-img, .bus-header .bh-qq .qq-box, .page-one .po-title, .main, .po-phone, .po-phone .per-one, .po-phone .per-one .per-dia1, .po-phone .per-two, .po-phone .per-two .per-dia2, .po-phone .per-three, .po-phone .per-three .per-dia3, .po-phone .per-four, .po-phone .per-five, .page1, .page-two .pt-title, .page-two .pt-calendar, .page-two .pt-right, .page-two .star-one, .page-two .star-two, .page-two .star-three, .page2, .page-three .pth-title, .page-three .pth-left, .page-three .pth-map, .page-three .pth-map .pth-router, .page-three .pth-map .pth-start, .page-three .pth-map .pth-end, .page3, .page-four .pf-title, .page-four .pf-left, .page-four .pf-right, .foot, .bus-footer .bf-box .bf-logos span.bf-logo:nth-child(1), .bus-footer .bf-box .bf-logos span.bf-logo:nth-child(2), .bus-footer .bf-box .bf-logos span.bf-logo:nth-child(3) {
   overflow: inherit; }
 
 .container {
@@ -74,13 +74,13 @@ html, body {
   border-bottom: 1px solid #f0f0f0; }
 
 .bus-header .bus-logo {
-  float: left;
-  margin-left: 10px;
-  margin-top: 18px;
-  background: url("../image/head/pic_logo.png");
+  background-position: -310px -77px;
+  background-repeat: no-repeat;
   width: 147px;
   height: 42px;
-  background-size: cover; }
+  float: left;
+  margin-left: 10px;
+  margin-top: 18px; }
 .bus-header .bh-wechat {
   float: right;
   margin-right: 70px;
