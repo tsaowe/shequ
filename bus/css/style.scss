@@ -608,12 +608,12 @@ html,body{
 
 //  地图动画前
   .pth-map{
-    @include sprite($pic_map);
-    @extend .page2;
-//    background:url('../image/page2/pic_map.png');
-//    width:757px;
-//    height:269px;
-//    background-size:cover;
+//    @include sprite($pic_map);
+//    @extend .page2;
+    background:url('../image/sprite/pic_map.png');
+    width:757px;
+    height:269px;
+    background-size:cover;
     position:absolute;
     bottom:100px;
     left:271px;

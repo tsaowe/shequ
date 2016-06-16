@@ -7,7 +7,7 @@
 .page1, .page-two .pt-title, .page-two .pt-calendar, .page-two .pt-right, .page-two .star-one, .page-two .star-two, .page-two .star-three {
   background-image: url("../image/sprite/page1.png"); }
 
-.page2, .page-three .pth-title, .page-three .pth-left, .page-three .pth-map, .page-three .pth-map .pth-router, .page-three .pth-map .pth-start, .page-three .pth-map .pth-end {
+.page2, .page-three .pth-title, .page-three .pth-left, .page-three .pth-map .pth-router, .page-three .pth-map .pth-start, .page-three .pth-map .pth-end {
   background-image: url("../image/sprite/page2.png"); }
 
 .page3, .page-four .pf-title, .page-four .pf-left, .page-four .pf-right {
@@ -50,7 +50,7 @@ html, body {
   font-family: Microsoft YaHei,Tahoma,SimSun,Verdana;
   color: #777777; }
 
-.head, .bus-header .bus-logo, .bus-header .bh-wechat .wc-img, .bus-header .bh-wechat .wc-box, .bus-header .bh-qq .qq-img, .bus-header .bh-qq .qq-box, .page-one .po-title, .main, .po-phone, .po-phone .per-one, .po-phone .per-one .per-dia1, .po-phone .per-two, .po-phone .per-two .per-dia2, .po-phone .per-three, .po-phone .per-three .per-dia3, .po-phone .per-four, .po-phone .per-five, .page1, .page-two .pt-title, .page-two .pt-calendar, .page-two .pt-right, .page-two .star-one, .page-two .star-two, .page-two .star-three, .page2, .page-three .pth-title, .page-three .pth-left, .page-three .pth-map, .page-three .pth-map .pth-router, .page-three .pth-map .pth-start, .page-three .pth-map .pth-end, .page3, .page-four .pf-title, .page-four .pf-left, .page-four .pf-right, .foot, .bus-footer .bf-box .bf-logos span.bf-logo:nth-child(1), .bus-footer .bf-box .bf-logos span.bf-logo:nth-child(2), .bus-footer .bf-box .bf-logos span.bf-logo:nth-child(3) {
+.head, .bus-header .bus-logo, .bus-header .bh-wechat .wc-img, .bus-header .bh-wechat .wc-box, .bus-header .bh-qq .qq-img, .bus-header .bh-qq .qq-box, .page-one .po-title, .main, .po-phone, .po-phone .per-one, .po-phone .per-one .per-dia1, .po-phone .per-two, .po-phone .per-two .per-dia2, .po-phone .per-three, .po-phone .per-three .per-dia3, .po-phone .per-four, .po-phone .per-five, .page1, .page-two .pt-title, .page-two .pt-calendar, .page-two .pt-right, .page-two .star-one, .page-two .star-two, .page-two .star-three, .page2, .page-three .pth-title, .page-three .pth-left, .page-three .pth-map .pth-router, .page-three .pth-map .pth-start, .page-three .pth-map .pth-end, .page3, .page-four .pf-title, .page-four .pf-left, .page-four .pf-right, .foot, .bus-footer .bf-box .bf-logos span.bf-logo:nth-child(1), .bus-footer .bf-box .bf-logos span.bf-logo:nth-child(2), .bus-footer .bf-box .bf-logos span.bf-logo:nth-child(3) {
   overflow: inherit; }
 
 .container {
@@ -401,7 +401,7 @@ html, body {
   height: 668px;
   z-index: 1; }
   .page-three .pth-title {
-    background-position: -757px 0px;
+    background-position: -341px 0px;
     background-repeat: no-repeat;
     width: 440px;
     height: 142px;
@@ -410,7 +410,7 @@ html, body {
     left: 530px;
     z-index: 3; }
   .page-three .pth-left {
-    background-position: 0px -269px;
+    background-position: 0px 0px;
     background-repeat: no-repeat;
     width: 341px;
     height: 518px;
@@ -419,10 +419,10 @@ html, body {
     left: 124px;
     z-index: 2; }
   .page-three .pth-map {
-    background-position: 0px 0px;
-    background-repeat: no-repeat;
+    background: url("../image/sprite/pic_map.png");
     width: 757px;
     height: 269px;
+    background-size: cover;
     position: absolute;
     bottom: 100px;
     left: 271px;
@@ -432,7 +432,7 @@ html, body {
     -o-transition: all 1s ease-out;
     transition: all 1s ease-out; }
     .page-three .pth-map .pth-router {
-      background-position: 0px -787px;
+      background-position: 0px -518px;
       background-repeat: no-repeat;
       width: 462px;
       height: 123px;
@@ -446,7 +446,7 @@ html, body {
       -o-transition: all 2s ease-out 1s;
       transition: all 2s ease-out 1s; }
     .page-three .pth-map .pth-start {
-      background-position: -757px -142px;
+      background-position: -341px -142px;
       background-repeat: no-repeat;
       width: 116px;
       height: 159px;
@@ -460,7 +460,7 @@ html, body {
       -o-transition: all 0.5s ease-out 1s;
       transition: all 0.5s ease-out 1s; }
     .page-three .pth-map .pth-end {
-      background-position: -873px -142px;
+      background-position: -457px -142px;
       background-repeat: no-repeat;
       width: 99px;
       height: 130px;

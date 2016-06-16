@@ -1,9 +1,8 @@
-$pic_end: -873px -142px 99px 130px;
-$pic_map: -0px -0px 757px 269px;
-$pic_page2: -0px -269px 341px 518px;
-$pic_route: -0px -787px 462px 123px;
-$pic_start: -757px -142px 116px 159px;
-$pic_title2: -757px -0px 440px 142px;
+$pic_end: -457px -142px 99px 130px;
+$pic_page2: -0px -0px 341px 518px;
+$pic_route: -0px -518px 462px 123px;
+$pic_start: -341px -142px 116px 159px;
+$pic_title2: -341px -0px 440px 142px;
 @mixin sprite-width($sprite) {
   width: nth($sprite, 3);
 }
@@ -24,8 +23,8 @@ $pic_title2: -757px -0px 440px 142px;
 @mixin sprite($sprite, $display: block) {
    @include sprite-position($sprite);
   background-repeat: no-repeat;
-//  overflow: hidden;
-//  display: $display;
+  overflow: hidden;
+  display: $display;
   @include sprite-width($sprite);
   @include sprite-height($sprite);
 }
