@@ -1,3 +1,11 @@
+@import "sprite/head";
+@import "sprite/main";
+@import "sprite/page1";
+@import "sprite/page2";
+@import "sprite/page3";
+@import "sprite/foot";
+
+
 @font-face {
   font-family: 'iconfont';
   src: url('//at.alicdn.com/t/font_1465812739_7291534.eot'); /* IE9*/
@@ -9,6 +17,8 @@
 .iconfont {
   font-family: iconfont,sans-serif;
 }
+
+
 
 html, body, div{
   margin:0;
@@ -35,6 +45,10 @@ html,body{
   color:#777777;
 }
 
+.head,.main,.page1,.page2,.page3,.foot{
+  overflow:inherit;
+}
+
 
 //主题内容
 .container{
@@ -50,15 +64,16 @@ html,body{
 //  背景图
 .full-img{
   position:absolute;
-  background:url('../image/head/pic_back.png') bottom center;
+  background:url('../image/sprite/pic_back.png') bottom center;
   width:100%;
   min-width:1090px;
-  height:792px;
   background-size:cover;
+  height:792px;
   z-index:-1;
   top:0;
   left:0;
   border-bottom:1px solid #f0f0f0;
+
 }
 
 //头部
@@ -75,25 +90,33 @@ html,body{
   }
 
   .bh-wechat {
+
     float: right;
     margin-right: 70px;
     margin-top: 19px;
     position: relative;
     .wc-img {
-      background: url('../image/head/pic_wechat.png');
-      width: 40px;
-      height: 40px;
-      background-size: cover;
+      @include sprite($pic_wechat);
+      @extend .head;
+//      background: url('../image/head/pic_wechat.png');
+//      width: 40px;
+//      height: 40px;
+//      background-size: cover;
+
     }
     .wc-box {
+      @include sprite($wc_code);
+      @extend .head;
       position: absolute;
       top: 40px;
       left: -58px;
-      background: url('../image/head/wc_code.png');
-      width: 155px;
-      height: 205px;
-      background-size: cover;
+//      background: url('../image/head/wc_code.png');
+//      width: 155px;
+//      height: 205px;
+//      background-size: cover;
+
       display: none;
+
     }
 
     .wc-img:hover {
@@ -113,19 +136,25 @@ html,body{
     margin-top: 19px;
     position: relative;
     .qq-img {
-      background: url('../image/head/pic_qq.png');
-      width: 40px;
-      height: 40px;
-      background-size: cover;
+      @include sprite($pic_qq);
+      @extend .head;
+//      background: url('../image/head/pic_qq.png');
+//      width: 40px;
+//      height: 40px;
+//      background-size: cover;
+
     }
     .qq-box {
+      @include sprite($qq_box);
+      @extend .head;
       position: absolute;
       top: 40px;
       left: -58px;
-      background: url('../image/head/qq_box.png');
-      width: 155px;
-      height: 116px;
-      background-size: cover;
+//      background: url('../image/head/qq_box.png');
+//      width: 155px;
+//      height: 116px;
+//      background-size: cover;
+
       display: none;
       span {
         position: relative;
@@ -154,10 +183,12 @@ html,body{
   .page-one{
     margin-top:34px;
     .po-title{
-      background:url('../image/head/pic_title.png');
-      width:503px;
-      height:77px;
-      background-size:cover;
+      @include sprite($pic_title);
+      @extend .head;
+//      background:url('../image/head/pic_title.png');
+//      width:503px;
+//      height:77px;
+//      background-size:cover;
       margin:0 auto;
     }
 
@@ -212,11 +243,13 @@ html,body{
 
 //  iphone图动画前
   .po-phone{
+    @include sprite($pic_phone);
+    @extend .main;
     margin-top:200px;
-    background:url('../image/head/pic_phone.png');
-    width:912px;
-    height:376px;
-    background-size:cover;
+//    background:url('../image/main/pic_phone.png');
+//    width:912px;
+//    height:376px;
+//    background-size:cover;
     position:relative;
     float:right;
     margin-right:40px;
@@ -225,21 +258,25 @@ html,body{
 
 
     .per-one{
+      @include sprite($pic_per1);
+      @extend .main;
       position:absolute;
-      background:url('../image/head/pic_per1.png');
-      width:150px;
-      height:195px;
-      background-size:cover;
+//      background:url('../image/main/pic_per1.png');
+//      width:150px;
+//      height:195px;
+//      background-size:cover;
       left:207px;
       top:70px;
       z-index:5;
 
 
       .per-dia1{
-        background:url('../image/head/pic_dia1.png');
-        width:224px;
-        height:108px;
-        background-size:cover;
+        @include sprite($pic_dia1);
+        @extend .main;
+//        background:url('../image/main/pic_dia1.png');
+//        width:224px;
+//        height:108px;
+//        background-size:cover;
         position:absolute;
         top:-73px;
         left:117px;
@@ -252,21 +289,25 @@ html,body{
     }
 
     .per-two{
+      @include sprite($pic_per2);
+      @extend .main;
       position:absolute;
-      background:url('../image/head/pic_per2.png');
-      width:99px;
-      height:131px;
-      background-size:cover;
+//      background:url('../image/main/pic_per2.png');
+//      width:99px;
+//      height:131px;
+//      background-size:cover;
       left:108px;
       top:34px;
       z-index:3;
 
 
       .per-dia2{
-        background:url('../image/head/pic_dia2.png');
-        width:231px;
-        height:94px;
-        background-size:cover;
+        @include sprite($pic_dia2);
+        @extend .main;
+//        background:url('../image/main/pic_dia2.png');
+//        width:231px;
+//        height:94px;
+//        background-size:cover;
         position:absolute;
         top:-110px;
         left:29px;
@@ -279,21 +320,25 @@ html,body{
     }
 
     .per-three{
+      @include sprite($pic_per3);
+      @extend .main;
       position:absolute;
-      background:url('../image/head/pic_per3.png');
-      width:118px;
-      height:151px;
-      background-size:cover;
+//      background:url('../image/main/pic_per3.png');
+//      width:118px;
+//      height:151px;
+//      background-size:cover;
       left:522px;
       top:-74px;
       z-index:1;
 
 
       .per-dia3{
-        background:url('../image/head/pic_dia3.png');
-        width:231px;
-        height:94px;
-        background-size:cover;
+        @include sprite($pic_dia3);
+        @extend .main;
+//        background:url('../image/main/pic_dia3.png');
+//        width:231px;
+//        height:94px;
+//        background-size:cover;
         position:absolute;
         top:-62px;
         left:90px;
@@ -305,23 +350,27 @@ html,body{
       }
     }
 
-    .per-four {
+    .per-four{
+    @include sprite($pic_per4);
+    @extend .main;
       position: absolute;
-      background: url('../image/head/pic_per4.png');
-      width: 82px;
-      height: 107px;
-      background-size: cover;
+//      background: url('../image/main/pic_per4.png');
+//      width: 82px;
+//      height: 107px;
+//      background-size: cover;
       left: 613px;
       top: 71px;
       z-index: 4;
     }
 
     .per-five {
+      @include sprite($pic_per5);
+      @extend .main;
       position: absolute;
-      background: url('../image/head/pic_per5.png');
-      width: 97px;
-      height: 126px;
-      background-size: cover;
+//      background: url('../image/main/pic_per5.png');
+//      width: 97px;
+//      height: 126px;
+//      background-size: cover;
       left: 415px;
       top: 3px;
       z-index: 2;
@@ -384,10 +433,12 @@ html,body{
 
 //  文字
   .pt-title{
-    background:url('../image/main/pic_title1.png');
-    width:357px;
-    height:105px;
-    background-size:cover;
+    @include sprite($pic_title1);
+    @extend .page1;
+//    background:url('../image/page1/pic_title1.png');
+//    width:357px;
+//    height:105px;
+//    background-size:cover;
     position:absolute;
     top:140px;
     left:56px;
@@ -396,10 +447,12 @@ html,body{
 
 //  日历
   .pt-calendar{
-    background:url('../image/main/pic_calendar.png');
-    width:208px;
-    height:221px;
-    background-size:cover;
+    @include sprite($pic_calendar);
+    @extend .page1;
+//    background:url('../image/page1/pic_calendar.png');
+//    width:208px;
+//    height:221px;
+//    background-size:cover;
     position:absolute;
     bottom:44px;
     left:254px;
@@ -412,10 +465,12 @@ html,body{
 
 //  截图
   .pt-right{
-    background:url('../image/main/pic_page1.png');
-    width:486px;
-    height:473px;
-    background-size:cover;
+    @include sprite($pic_page1);
+    @extend .page1;
+//    background:url('../image/page1/pic_page1.png');
+//    width:486px;
+//    height:473px;
+//    background-size:cover;
     position:absolute;
     bottom:0;
     left:513px;
@@ -428,10 +483,12 @@ html,body{
 
 //  星星
   .star-one{
-    background:url('../image/main/pic_star1.png');
-    width:74px;
-    height:105px;
-    background-size:cover;
+    @include sprite($pic_star1);
+    @extend .page1;
+//    background:url('../image/page1/pic_star1.png');
+//    width:74px;
+//    height:105px;
+//    background-size:cover;
     position:absolute;
     top:320px;
     left:271px;
@@ -444,10 +501,12 @@ html,body{
   }
 
   .star-two{
-    background:url('../image/main/pic_star2.png');
-    width:74px;
-    height:90px;
-    background-size:cover;
+    @include sprite($pic_star2);
+    @extend .page1;
+//    background:url('../image/page1/pic_star2.png');
+//    width:74px;
+//    height:90px;
+//    background-size:cover;
     position:absolute;
     top:59px;
     left:5px;
@@ -459,10 +518,12 @@ html,body{
   }
 
   .star-three{
-    background:url('../image/main/pic_star3.png');
-    width:47px;
-    height:62px;
-    background-size:cover;
+    @include sprite($pic_star3);
+    @extend .page1;
+//    background:url('../image/page1/pic_star3.png');
+//    width:47px;
+//    height:62px;
+//    background-size:cover;
     position:absolute;
     top:454px;
     left:518px;
@@ -516,10 +577,12 @@ html,body{
   z-index:1;
 
   .pth-title{
-    background:url('../image/main/pic_title2.png');
-    width:440px;
-    height:142px;
-    background-size:cover;
+    @include sprite($pic_title2);
+    @extend .page2;
+//    background:url('../image/page2/pic_title2.png');
+//    width:440px;
+//    height:142px;
+//    background-size:cover;
     position:absolute;
     top:109px;
     left:530px;
@@ -529,10 +592,12 @@ html,body{
   }
 
   .pth-left{
-    background:url('../image/main/pic_page2.png');
-    width:341px;
-    height:518px;
-    background-size:cover;
+    @include sprite($pic_page2);
+    @extend .page2;
+//    background:url('../image/page2/pic_page2.png');
+//    width:341px;
+//    height:518px;
+//    background-size:cover;
     position:absolute;
     bottom:0;
     left:124px;
@@ -541,10 +606,12 @@ html,body{
 
 //  地图动画前
   .pth-map{
-    background:url('../image/main/pic_map.png');
-    width:757px;
-    height:269px;
-    background-size:cover;
+    @include sprite($pic_map);
+    @extend .page2;
+//    background:url('../image/page2/pic_map.png');
+//    width:757px;
+//    height:269px;
+//    background-size:cover;
     position:absolute;
     bottom:100px;
     left:271px;
@@ -555,10 +622,12 @@ html,body{
     transition:all 1s ease-out;
 
     .pth-router{
-      background:url('../image/main/pic_route.png');
+      @include sprite($pic_route);
+      @extend .page2;
+//      background:url('../image/page2/pic_route.png');
       width:0;
-      height:123px;
-      background-size:cover;
+//      height:123px;
+//      background-size:cover;
       position:absolute;
       top:68px;
       left:147px;
@@ -570,10 +639,12 @@ html,body{
     }
 
     .pth-start{
-      background:url('../image/main/pic_start.png');
-      width:116px;
-      height:159px;
-      background-size:cover;
+      @include sprite($pic_start);
+      @extend .page2;
+//      background:url('../image/page2/pic_start.png');
+//      width:116px;
+//      height:159px;
+//      background-size:cover;
       position:absolute;
       top:0;
       left:84px;
@@ -586,10 +657,12 @@ html,body{
     }
 
     .pth-end{
-      background:url('../image/main/pic_end.png');
-      width:99px;
-      height:130px;
-      background-size:cover;
+      @include sprite($pic_end);
+      @extend .page2;
+//      background:url('../image/page2/pic_end.png');
+//      width:99px;
+//      height:130px;
+//      background-size:cover;
       position:absolute;
       top:-40px;
       left:546px;
@@ -626,10 +699,12 @@ html,body{
   padding-bottom: 100px;
 
   .pf-title{
-    background:url('../image/main/pic_title3.png');
-    width:479px;
-    height:106px;
-    background-size:cover;
+    @include sprite($pic_title3);
+    @extend .page3;
+//    background:url('../image/page3/pic_title3.png');
+//    width:479px;
+//    height:106px;
+//    background-size:cover;
     position:absolute;
     top:122px;
     left:88px;
@@ -637,10 +712,12 @@ html,body{
   }
 
   .pf-left{
-    background:url('../image/main/pic_bus.png');
-    width:623px;
-    height:398px;
-    background-size:cover;
+    @include sprite($pic_bus);
+    @extend .page3;
+//    background:url('../image/page3/pic_bus.png');
+//    width:623px;
+//    height:398px;
+//    background-size:cover;
     position:absolute;
     top:286px;
     left:38px;
@@ -648,10 +725,12 @@ html,body{
   }
 
   .pf-right{
-    background:url('../image/main/pic_page3.png');
-    width:398px;
-    height:521px;
-    background-size:cover;
+    @include sprite($pic_page3);
+    @extend .page3;
+//    background:url('../image/page3/pic_page3.png');
+//    width:398px;
+//    height:521px;
+//    background-size:cover;
     position:absolute;
     top:126px;
     left:650px;
@@ -701,28 +780,34 @@ html,body{
     .bf-logos{
       margin-top:12px;
 
-      img{
+      span.bf-logo{
         margin-right:10px;
         border-radius:5px;
+        display:inline-block;
         &:nth-child(1){
-          width:124px;
-          height:46px;
+          @include sprite($foot_logo1);
+          @extend .foot;
+//          width:124px;
+//          height:46px;
+//          background:url('../image/foot/foot_logo1.png');
         }
         &:nth-child(2){
-          width:125px;
-          height:46px;
+          @include sprite($foot_logo2);
+          @extend .foot;
+//          width:125px;
+//          height:46px;
+//          background:url('../image/foot/foot_logo2.png');
         }
         &:nth-child(3){
-          width:123px;
-          height:46px;
+          @include sprite($foot_logo3);
+          @extend .foot;
+//          width:123px;
+//          height:46px;
+//          background:url('../image/foot/foot_logo3.png');
         }
       }
     }
   }
 
 
-}
-
-.bus-footer img{
-  width:100%;
 }

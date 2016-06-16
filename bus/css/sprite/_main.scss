@@ -1,0 +1,38 @@
+$pic_dia1: -150px -376px 224px 108px;
+$pic_dia2: -374px -376px 231px 94px;
+$pic_dia3: -605px -376px 231px 94px;
+$pic_per1: -0px -376px 150px 195px;
+$pic_per2: -118px -571px 99px 131px;
+$pic_per3: -0px -571px 118px 151px;
+$pic_per4: -314px -571px 82px 107px;
+$pic_per5: -217px -571px 97px 126px;
+$pic_phone: -0px -0px 912px 376px;
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 3);
+}
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 4);
+}
+@function sprite-width($sprite) {
+   @return nth($sprite, 3);
+}
+@function sprite-height($sprite) {
+   @return nth($sprite, 4);
+}
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 1);
+  $sprite-offset-y: nth($sprite, 2);
+  background-position: $sprite-offset-x $sprite-offset-y;
+}
+@mixin sprite($sprite, $display: block) {
+   @include sprite-position($sprite);
+  background-repeat: no-repeat;
+//  overflow: hidden;
+//  display: $display;
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+.main {
+  background-image: url('../image/sprite/main.png');
+}

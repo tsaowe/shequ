@@ -1,0 +1,35 @@
+$pic_calendar: -486px -0px 208px 221px;
+$pic_page1: -0px -0px 486px 473px;
+$pic_star1: -486px -221px 74px 105px;
+$pic_star2: -560px -221px 74px 90px;
+$pic_star3: -634px -221px 47px 62px;
+$pic_title1: -0px -473px 357px 105px;
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 3);
+}
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 4);
+}
+@function sprite-width($sprite) {
+   @return nth($sprite, 3);
+}
+@function sprite-height($sprite) {
+   @return nth($sprite, 4);
+}
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 1);
+  $sprite-offset-y: nth($sprite, 2);
+  background-position: $sprite-offset-x $sprite-offset-y;
+}
+@mixin sprite($sprite, $display: block) {
+   @include sprite-position($sprite);
+  background-repeat: no-repeat;
+//  overflow: hidden;
+//  display: $display;
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+.page1 {
+  background-image: url('../image/sprite/page1.png');
+}

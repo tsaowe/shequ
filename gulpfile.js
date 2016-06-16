@@ -227,3 +227,114 @@ gulp.task('zip',['del'],function(){
 
 //gulp build自动打包项目
 gulp.task('publish',['zip']);
+
+gulp.task('sprite-head',function(){
+    return sprity.src({
+        src:'./bus/image/head/*.png',
+        name: 'head',                       //定义一个名称
+        style: '_head.scss',                //这是生成的样式文件
+        format: 'png',                      //png格式的图片
+        //split: true, //多图分割
+        prefix: 'head',
+        orientation: 'binary-tree',          //雪碧图合并的方向，也可以设置成垂直或水平
+        cssPath: '../image/sprite/',    //雪碧图的路径变量
+        processor: 'sass',                   //生成的样式文件的格式
+        'margin':0,    //图片间距
+        template: './sprity-css.hbs',
+        'style-type':'scss'})
+        .pipe(gulpif('*.png',gulp.dest('./bus/image/sprite/'),gulp.dest('./bus/css/sprite/')));
+});
+
+
+gulp.task('sprite-main',function(){
+    return sprity.src({
+        src:'./bus/image/main/*.png',
+        name: 'main',                       //定义一个名称
+        style: '_main.scss',                //这是生成的样式文件
+        format: 'png',                      //png格式的图片
+        orientation: 'binary-tree',
+        cssPath: '../image/sprite/',    //雪碧图的路径变量
+        processor: 'sass',                   //生成的样式文件的格式
+        'margin':0,    //图片间距
+        prefix: 'main',
+        'style-type':'scss'})
+        .pipe(gulpif('*.png',gulp.dest('./bus/image/sprite/'),gulp.dest('./bus/css/sprite/')));
+});
+
+gulp.task('sprite-page1',function(){
+    return sprity.src({
+        src:'./bus/image/page1/*.png',
+        name: 'page1',                       //定义一个名称
+        style: '_page1.scss',                //这是生成的样式文件
+        format: 'png',                      //png格式的图片
+        orientation: 'binary-tree',
+        cssPath: '../image/sprite/',    //雪碧图的路径变量
+        processor: 'sass',                   //生成的样式文件的格式
+        'margin':0,    //图片间距
+        prefix: 'page1',
+        'style-type':'scss'})
+        .pipe(gulpif('*.png',gulp.dest('./bus/image/sprite/'),gulp.dest('./bus/css/sprite/')));
+});
+
+gulp.task('sprite-page2',function(){
+    return sprity.src({
+        src:'./bus/image/page2/*.png',
+        name: 'page2',                       //定义一个名称
+        style: '_page2.scss',                //这是生成的样式文件
+        format: 'png',                      //png格式的图片
+        orientation: 'binary-tree',
+        cssPath: '../image/sprite/',    //雪碧图的路径变量
+        processor: 'sass',                   //生成的样式文件的格式
+        'margin':0,    //图片间距
+        prefix: 'page2',
+        'style-type':'scss'})
+        .pipe(gulpif('*.png',gulp.dest('./bus/image/sprite/'),gulp.dest('./bus/css/sprite/')));
+});
+
+gulp.task('sprite-page3',function(){
+    return sprity.src({
+        src:'./bus/image/page3/*.png',
+        name: 'page3',                       //定义一个名称
+        style: '_page3.scss',                //这是生成的样式文件
+        format: 'png',                      //png格式的图片
+        orientation: 'binary-tree',
+        cssPath: '../image/sprite/',    //雪碧图的路径变量
+        processor: 'sass',                   //生成的样式文件的格式
+        'margin':0,    //图片间距
+        prefix: 'page3',
+        'style-type':'scss'})
+        .pipe(gulpif('*.png',gulp.dest('./bus/image/sprite/'),gulp.dest('./bus/css/sprite/')));
+});
+
+gulp.task('sprite-foot',function(){
+    return sprity.src({
+        src:'./bus/image/foot/*.png',
+        name: 'foot',                       //定义一个名称
+        style: '_foot.scss',                //这是生成的样式文件
+        format: 'png',                      //png格式的图片
+        orientation: 'binary-tree',
+        cssPath: '../image/sprite/',    //雪碧图的路径变量
+        processor: 'sass',                   //生成的样式文件的格式
+        'margin':0,    //图片间距
+        prefix: 'foot',
+        'style-type':'scss'})
+        .pipe(gulpif('*.png',gulp.dest('./bus/image/sprite/'),gulp.dest('./bus/css/sprite/')));
+});
+
+//有更新的图片压缩，写入build
+gulp.task('bus-imgmin',function(){
+    var imgOpt =
+    {
+        optimizationLevel: 5, //类型：Number  默认：3  取值范围：0-7（优化等级）
+        progressive: true, //类型：Boolean 默认：false 无损压缩jpg图片
+        interlaced: true, //类型：Boolean 默认：false 隔行扫描gif进行渲染
+        multipass: true //类型：Boolean 默认：false 多次优化svg直到完全优化
+    };
+    return gulp.src('./bus/image/sprite/*.png')
+        .pipe(cache(imagemin(imgOpt)))
+        .pipe(gulp.dest('bus/image/sprite'))
+        .pipe(notify({ message: 'images task complete' }));
+
+});
+
+gulp.task('bus-sprite',['sprite-head','sprite-main','sprite-page1','sprite-page2','sprite-page3','sprite-foot']);

@@ -1,0 +1,35 @@
+$pic_logo: -310px -77px 147px 42px;
+$pic_qq: -457px -77px 40px 40px;
+$pic_title: -0px -0px 503px 77px;
+$pic_wechat: -310px -119px 40px 40px;
+$qq_box: -155px -77px 155px 116px;
+$wc_code: -0px -77px 155px 205px;
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 3);
+}
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 4);
+}
+@function sprite-width($sprite) {
+   @return nth($sprite, 3);
+}
+@function sprite-height($sprite) {
+   @return nth($sprite, 4);
+}
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 1);
+  $sprite-offset-y: nth($sprite, 2);
+  background-position: $sprite-offset-x $sprite-offset-y;
+}
+@mixin sprite($sprite, $display: block) {
+   @include sprite-position($sprite);
+  background-repeat: no-repeat;
+//  overflow: hidden;
+//  display: $display;
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+.head {
+  background-image: url('../image/sprite/head.png');
+}

@@ -1,0 +1,35 @@
+$pic_end: -873px -142px 99px 130px;
+$pic_map: -0px -0px 757px 269px;
+$pic_page2: -0px -269px 341px 518px;
+$pic_route: -0px -787px 462px 123px;
+$pic_start: -757px -142px 116px 159px;
+$pic_title2: -757px -0px 440px 142px;
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 3);
+}
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 4);
+}
+@function sprite-width($sprite) {
+   @return nth($sprite, 3);
+}
+@function sprite-height($sprite) {
+   @return nth($sprite, 4);
+}
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 1);
+  $sprite-offset-y: nth($sprite, 2);
+  background-position: $sprite-offset-x $sprite-offset-y;
+}
+@mixin sprite($sprite, $display: block) {
+   @include sprite-position($sprite);
+  background-repeat: no-repeat;
+//  overflow: hidden;
+//  display: $display;
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+.page2 {
+  background-image: url('../image/sprite/page2.png');
+}
