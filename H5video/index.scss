@@ -1,0 +1,523 @@
+//reset css
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+  font-family: 'Helvetica';
+}
+
+:focus {
+  outline: 1;
+}
+
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"] {
+
+  -webkit-appearance: none;
+
+}
+
+textarea {
+  -webkit-appearance: none;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1; /*IE/7/6*/
+}
+
+//main start
+
+html,body {
+  overflow-x: hidden;
+}
+
+.content {
+
+  transform-origin: 0 0;
+
+  .fr {
+    float: right;
+  }
+  .fl{
+    float:left;
+  }
+
+  width: 640px;
+
+  header {
+    height: 93px;
+    display: flex;
+    flex-direction: row;
+    div.head {
+      margin: 19px 19px 19px 20px;
+      height: 55px;
+      width:55px;
+      border-radius: 50%;
+      background-size: cover;
+    }
+    div.info {
+      div:nth-child(1){
+        margin:16px 0 0 0;
+        font-size: 24px;
+        color:#333333;
+        height:33px;
+        line-height: 33px;
+      }
+      div:nth-child(2){
+        margin:4px 0 0 0;
+        color:#999999;;
+        font-size: 17px;
+      }
+    }
+    div.gap{
+      flex:1;
+    }
+    div.btn {
+      height:45px;
+      width:119px;
+      position: relative;
+      right:20px;
+      top:24px;
+      border:1px solid #fe4070;
+      border-radius: 22.5px;
+      color:#fe4070;
+      line-height: 45px;
+      display: flex;
+      justify-content: center;
+      font-size: 22px;
+    }
+  }
+
+  div.player {
+    background-size: cover;
+    height:640px;
+    width:640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    div.play {
+      height:118px;
+      width:118px;
+      background-image: url(images/video-play.png);
+      background-size: cover;
+    }
+    div.player-control {
+      position: absolute;
+      bottom:0;
+      left: 0;
+      display: flex;
+      flex-direction: row;
+      .start,.end {
+        margin:0 10px 14px 20px;
+        color:#ffffff;
+        font-size: 20px;
+        height:28px;
+        line-height: 28px;
+      }
+      .control {
+        width:416px;
+        height:1px;
+        background-color: #fe4070;
+        border-radius: 1.5px;
+        border:1px solid #fe4070;
+        margin:10px 0 20px 10px;
+
+        .outer-position {
+          position: relative;
+          width:34px;
+          height:34px;
+          background-color: rgba(255,255,255,.3);
+          border-radius: 50%;
+          display: flex;
+          justify-content:center;
+          align-items: center;
+          top:-17px;
+          left:300px;
+          .inner-position{
+            height: 13px;
+            width:13px;
+            background-color: rgba(255,255,255,1);
+            border-radius: 50%;
+          }
+        }
+
+      }
+      .end {
+        margin:0 18px 0 10px;
+      }
+      .stretch{
+        background-image: url('images/stretch.png');
+        height:41px;
+        width:41px;
+        background-size: cover;
+        margin-right: 10px;
+        position: relative;
+        top:-9px;
+      }
+
+    }
+  }
+
+  section.desc {
+    margin:20px;
+    line-height: 37px;
+    font-size: 26px;
+    color:#333333;
+  }
+
+  div.attributes {
+    margin:0 10px 20px 0;
+    padding-left: 10px;
+    >div{
+      background: #f0f2f5;
+      color:#6A7682;
+      height:44px;
+      margin-left: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      display: inline-block;
+      line-height: 44px;
+      padding:0 20px;
+    }
+  }
+
+  div.recommend {
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 25px;
+    .header {
+      margin-left: 20px;
+      color: #666;
+      font-size: 24px;
+      position: relative;
+      .icon-up{
+        background-image: url('images/icon-up.png');
+        width:14px;
+        height:9px;
+        position: absolute;
+        bottom: -25px;
+        left:42px;
+      }
+    }
+
+
+  }
+
+  .items {
+    .item {
+      display: flex;
+      height:176px;
+      border-bottom: 1px solid #eeeeee;
+      .image {
+        height:136px;
+        width:136px;
+        margin:20px;
+        background-size: cover;
+      }
+      .titles {
+        flex:1;
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        .title {
+          line-height: 33px;
+          font-size: 24px;
+          color:#333333;
+          padding-right: 20px;
+        }
+        .price {
+          color:#fe4070;
+          font-size: 31px;
+          line-height:39px;
+          height:39px;
+          position: relative;
+          top:-20px;
+        }
+      }
+    }
+  }
+
+  .last-post {
+    padding-left: 14px;
+    display: flex;
+    flex-direction:row;
+    height:64px;
+    align-items: center;
+    .icon-time {
+      height:34px;
+      width:34px;
+      background-image: url('images/clock-time.png');
+      background-size: cover;
+    }
+    div.post-text {
+      padding-left: 14px;
+      color:#999999;
+      font-size: 22px;
+    }
+  }
+
+  .grey-background-1 {
+    height: 14px;
+    background:#f5f5f5;
+  }
+
+  div.heart-love {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height:85px;
+    position: relative;
+    .heart {
+      background-image: url('images/grey-heart.png');
+      height:34px;
+      width:34px;
+      margin: 0 0 0 14px;
+    }
+    .head {
+      background-image: url('http://img02.tooopen.com/products/20140109/77267168.jpg');
+      height:55px;
+      width:55px;
+      border-radius: 50%;
+      background-size: cover;
+      margin-left: 15px;
+    }
+
+    .more-love {
+      height:37px;
+      background-color: #fe4070;
+      border-radius: 18.5px 0 0 18.5px;
+      color:#ffffff;
+      font-size: 20px;
+      padding-left: 14px;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      top:24px;
+
+      span:last-child {
+        height:17px;
+        width:17px;
+        background-image: url('images/icon-right.png');
+        margin:0 4px;
+      }
+    }
+  }
+
+  div.replay-summary{
+    height:64px;
+    line-height: 64px;
+    padding-left: 62px;
+    font-size: 22px;
+    color:#999999;
+    span {
+      color:#fe4070;
+    }
+  }
+
+  .replays {
+
+    .replay{
+      height:125px;
+      padding-top: 16px;
+      padding-left: 20px;
+      display: flex;
+      border-bottom: 1px solid #eeeeee;
+      .head {
+        height:55px;
+        width:55px;
+        border-radius: 50%;
+        margin-right: 20px;
+        background-size: cover;
+      }
+
+      .replay-contents {
+        flex:10;
+        padding:0 0 16px 0;
+        .name{
+          color: #666666;
+          font-size: 20px;
+          line-height: 28px;
+          height:28px;
+        }
+        .replay-time {
+          color:#999999;
+          font-size: 17px;
+          line-height: 24px;
+          height:24px;
+          margin-top: 2px;
+        }
+        .replay-content{
+          font-size: 24px;
+          line-height: 33px;
+          color:#333333;
+          span {
+            color:#fe4070;
+          }
+        }
+      }
+
+
+      .thumb-up-red {
+        height:40px;
+        flex:2;
+        color:#fe4070;
+        font-size: 22px;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: flex-end;
+        span:last-child{
+          display: inline-block;
+          background-image: url('images/thumb-up-red.png');
+          height:41px;
+          width:41px;
+          margin-right: 20px;
+        }
+      }
+      .thumb-up-grey {
+        height:40px;
+        flex:2;
+        color:#d1d1d1;
+        font-size: 22px;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: flex-end;
+        span:last-child{
+          display: inline-block;
+          background-image: url('images/thumb-up-grey.png');
+          height:41px;
+          width:41px;
+          margin-right: 20px;
+        }
+      }
+    }
+
+  }
+
+  .more-replay {
+    height:100px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    background-color: #f5f5f5;
+    color: #999999;
+    font-size: 22px;
+    span {
+      color: #fe4070;
+    }
+  }
+
+  .goto-jumei-app {
+    margin:40px auto;
+    height:62px;
+    background-color: #fe4070;
+    color: #ffffff;
+    font-size: 22px;
+    border-radius: 31px;
+    text-align: center;
+    width:400px;
+    line-height: 62px;
+  }
+
+}
