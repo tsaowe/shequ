@@ -1,3 +1,21 @@
+.head, .bus-header .bus-logo, .bus-header .bh-wechat .wc-img, .bus-header .bh-wechat .wc-box, .bus-header .bh-qq .qq-img, .bus-header .bh-qq .qq-box, .page-one .po-title {
+  background-image: url("../image/sprite/head.png"); }
+
+.main, .po-phone, .po-phone .per-one, .po-phone .per-one .per-dia1, .po-phone .per-two, .po-phone .per-two .per-dia2, .po-phone .per-three, .po-phone .per-three .per-dia3, .po-phone .per-four, .po-phone .per-five {
+  background-image: url("../image/sprite/main.png"); }
+
+.page1, .page-two .pt-title, .page-two .pt-calendar, .page-two .pt-right, .page-two .star-one, .page-two .star-two, .page-two .star-three {
+  background-image: url("../image/sprite/page1.png"); }
+
+.page2, .page-three .pth-title, .page-three .pth-left, .page-three .pth-map .pth-router, .page-three .pth-map .pth-start, .page-three .pth-map .pth-end {
+  background-image: url("../image/sprite/page2.png"); }
+
+.page3, .page-four .pf-title, .page-four .pf-left, .page-four .pf-right {
+  background-image: url("../image/sprite/page3.png"); }
+
+.foot, .bus-footer .bf-box .bf-logos span.bf-logo:nth-child(1), .bus-footer .bf-box .bf-logos span.bf-logo:nth-child(2), .bus-footer .bf-box .bf-logos span.bf-logo:nth-child(3) {
+  background-image: url("../image/sprite/foot.png"); }
+
 @font-face {
   font-family: 'iconfont';
   src: url("//at.alicdn.com/t/font_1465812739_7291534.eot");
@@ -32,6 +50,9 @@ html, body {
   font-family: Microsoft YaHei,Tahoma,SimSun,Verdana;
   color: #777777; }
 
+.head, .bus-header .bus-logo, .bus-header .bh-wechat .wc-img, .bus-header .bh-wechat .wc-box, .bus-header .bh-qq .qq-img, .bus-header .bh-qq .qq-box, .page-one .po-title, .main, .po-phone, .po-phone .per-one, .po-phone .per-one .per-dia1, .po-phone .per-two, .po-phone .per-two .per-dia2, .po-phone .per-three, .po-phone .per-three .per-dia3, .po-phone .per-four, .po-phone .per-five, .page1, .page-two .pt-title, .page-two .pt-calendar, .page-two .pt-right, .page-two .star-one, .page-two .star-two, .page-two .star-three, .page2, .page-three .pth-title, .page-three .pth-left, .page-three .pth-map .pth-router, .page-three .pth-map .pth-start, .page-three .pth-map .pth-end, .page3, .page-four .pf-title, .page-four .pf-left, .page-four .pf-right, .foot, .bus-footer .bf-box .bf-logos span.bf-logo:nth-child(1), .bus-footer .bf-box .bf-logos span.bf-logo:nth-child(2), .bus-footer .bf-box .bf-logos span.bf-logo:nth-child(3) {
+  overflow: inherit; }
+
 .container {
   width: 1090px;
   margin: 0 auto; }
@@ -42,42 +63,42 @@ html, body {
 
 .full-img {
   position: absolute;
-  background: url("../image/head/pic_back.png") bottom center;
+  background: url("../image/sprite/pic_back.png") bottom center;
   width: 100%;
   min-width: 1090px;
-  height: 792px;
   background-size: cover;
+  height: 792px;
   z-index: -1;
   top: 0;
   left: 0;
   border-bottom: 1px solid #f0f0f0; }
 
 .bus-header .bus-logo {
-  float: left;
-  margin-left: 10px;
-  margin-top: 18px;
-  background: url("../image/head/pic_logo.png");
+  background-position: -310px -77px;
+  background-repeat: no-repeat;
   width: 147px;
   height: 42px;
-  background-size: cover; }
+  float: left;
+  margin-left: 10px;
+  margin-top: 18px; }
 .bus-header .bh-wechat {
   float: right;
   margin-right: 70px;
   margin-top: 19px;
   position: relative; }
   .bus-header .bh-wechat .wc-img {
-    background: url("../image/head/pic_wechat.png");
+    background-position: -310px -119px;
+    background-repeat: no-repeat;
     width: 40px;
-    height: 40px;
-    background-size: cover; }
+    height: 40px; }
   .bus-header .bh-wechat .wc-box {
+    background-position: 0px -77px;
+    background-repeat: no-repeat;
+    width: 155px;
+    height: 205px;
     position: absolute;
     top: 40px;
     left: -58px;
-    background: url("../image/head/wc_code.png");
-    width: 155px;
-    height: 205px;
-    background-size: cover;
     display: none; }
   .bus-header .bh-wechat .wc-img:hover {
     opacity: 0.5; }
@@ -89,18 +110,18 @@ html, body {
   margin-top: 19px;
   position: relative; }
   .bus-header .bh-qq .qq-img {
-    background: url("../image/head/pic_qq.png");
+    background-position: -457px -77px;
+    background-repeat: no-repeat;
     width: 40px;
-    height: 40px;
-    background-size: cover; }
+    height: 40px; }
   .bus-header .bh-qq .qq-box {
+    background-position: -155px -77px;
+    background-repeat: no-repeat;
+    width: 155px;
+    height: 116px;
     position: absolute;
     top: 40px;
     left: -58px;
-    background: url("../image/head/qq_box.png");
-    width: 155px;
-    height: 116px;
-    background-size: cover;
     display: none; }
     .bus-header .bh-qq .qq-box span {
       position: relative;
@@ -116,10 +137,10 @@ html, body {
 .page-one {
   margin-top: 34px; }
   .page-one .po-title {
-    background: url("../image/head/pic_title.png");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
     width: 503px;
     height: 77px;
-    background-size: cover;
     margin: 0 auto; }
   .page-one .po-download {
     margin-top: 40px;
@@ -155,29 +176,29 @@ html, body {
         color: #ffffff; }
 
 .po-phone {
-  margin-top: 200px;
-  background: url("../image/head/pic_phone.png");
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
   width: 912px;
   height: 376px;
-  background-size: cover;
+  margin-top: 200px;
   position: relative;
   float: right;
   margin-right: 40px;
   z-index: 1; }
   .po-phone .per-one {
-    position: absolute;
-    background: url("../image/head/pic_per1.png");
+    background-position: 0px -376px;
+    background-repeat: no-repeat;
     width: 150px;
     height: 195px;
-    background-size: cover;
+    position: absolute;
     left: 207px;
     top: 70px;
     z-index: 5; }
     .po-phone .per-one .per-dia1 {
-      background: url("../image/head/pic_dia1.png");
+      background-position: -150px -376px;
+      background-repeat: no-repeat;
       width: 224px;
       height: 108px;
-      background-size: cover;
       position: absolute;
       top: -73px;
       left: 117px;
@@ -187,19 +208,19 @@ html, body {
       -o-transition: all 1s ease-out 3s;
       transition: all 1s ease-out 3s; }
   .po-phone .per-two {
-    position: absolute;
-    background: url("../image/head/pic_per2.png");
+    background-position: -118px -571px;
+    background-repeat: no-repeat;
     width: 99px;
     height: 131px;
-    background-size: cover;
+    position: absolute;
     left: 108px;
     top: 34px;
     z-index: 3; }
     .po-phone .per-two .per-dia2 {
-      background: url("../image/head/pic_dia2.png");
+      background-position: -374px -376px;
+      background-repeat: no-repeat;
       width: 231px;
       height: 94px;
-      background-size: cover;
       position: absolute;
       top: -110px;
       left: 29px;
@@ -209,19 +230,19 @@ html, body {
       -o-transition: all 1s ease-out 1s;
       transition: all 1s ease-out 1s; }
   .po-phone .per-three {
-    position: absolute;
-    background: url("../image/head/pic_per3.png");
+    background-position: 0px -571px;
+    background-repeat: no-repeat;
     width: 118px;
     height: 151px;
-    background-size: cover;
+    position: absolute;
     left: 522px;
     top: -74px;
     z-index: 1; }
     .po-phone .per-three .per-dia3 {
-      background: url("../image/head/pic_dia3.png");
+      background-position: -605px -376px;
+      background-repeat: no-repeat;
       width: 231px;
       height: 94px;
-      background-size: cover;
       position: absolute;
       top: -62px;
       left: 90px;
@@ -231,20 +252,20 @@ html, body {
       -o-transition: all 1s ease-out 2s;
       transition: all 1s ease-out 2s; }
   .po-phone .per-four {
-    position: absolute;
-    background: url("../image/head/pic_per4.png");
+    background-position: -314px -571px;
+    background-repeat: no-repeat;
     width: 82px;
     height: 107px;
-    background-size: cover;
+    position: absolute;
     left: 613px;
     top: 71px;
     z-index: 4; }
   .po-phone .per-five {
-    position: absolute;
-    background: url("../image/head/pic_per5.png");
+    background-position: -217px -571px;
+    background-repeat: no-repeat;
     width: 97px;
     height: 126px;
-    background-size: cover;
+    position: absolute;
     left: 415px;
     top: 3px;
     z-index: 2; }
@@ -280,18 +301,18 @@ html, body {
   height: 628px;
   z-index: 1; }
   .page-two .pt-title {
-    background: url("../image/main/pic_title1.png");
+    background-position: 0px -473px;
+    background-repeat: no-repeat;
     width: 357px;
     height: 105px;
-    background-size: cover;
     position: absolute;
     top: 140px;
     left: 56px; }
   .page-two .pt-calendar {
-    background: url("../image/main/pic_calendar.png");
+    background-position: -486px 0px;
+    background-repeat: no-repeat;
     width: 208px;
     height: 221px;
-    background-size: cover;
     position: absolute;
     bottom: 44px;
     left: 254px;
@@ -301,10 +322,10 @@ html, body {
     -o-transition: all 3s ease-out;
     transition: all 3s ease-out; }
   .page-two .pt-right {
-    background: url("../image/main/pic_page1.png");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
     width: 486px;
     height: 473px;
-    background-size: cover;
     position: absolute;
     bottom: 0;
     left: 513px;
@@ -314,10 +335,10 @@ html, body {
     -o-transition: all 3s ease-out;
     transition: all 3s ease-out; }
   .page-two .star-one {
-    background: url("../image/main/pic_star1.png");
+    background-position: -486px -221px;
+    background-repeat: no-repeat;
     width: 74px;
     height: 105px;
-    background-size: cover;
     position: absolute;
     top: 320px;
     left: 271px;
@@ -328,10 +349,10 @@ html, body {
     -o-transition: all 1s ease-out 3s;
     transition: all 1s ease-out 3s; }
   .page-two .star-two {
-    background: url("../image/main/pic_star2.png");
+    background-position: -560px -221px;
+    background-repeat: no-repeat;
     width: 74px;
     height: 90px;
-    background-size: cover;
     position: absolute;
     top: 59px;
     left: 5px;
@@ -341,10 +362,10 @@ html, body {
     -o-transition: all 1s ease-out 4s;
     transition: all 1s ease-out 4s; }
   .page-two .star-three {
-    background: url("../image/main/pic_star3.png");
+    background-position: -634px -221px;
+    background-repeat: no-repeat;
     width: 47px;
     height: 62px;
-    background-size: cover;
     position: absolute;
     top: 454px;
     left: 518px;
@@ -380,25 +401,25 @@ html, body {
   height: 668px;
   z-index: 1; }
   .page-three .pth-title {
-    background: url("../image/main/pic_title2.png");
+    background-position: -341px 0px;
+    background-repeat: no-repeat;
     width: 440px;
     height: 142px;
-    background-size: cover;
     position: absolute;
     top: 109px;
     left: 530px;
     z-index: 3; }
   .page-three .pth-left {
-    background: url("../image/main/pic_page2.png");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
     width: 341px;
     height: 518px;
-    background-size: cover;
     position: absolute;
     bottom: 0;
     left: 124px;
     z-index: 2; }
   .page-three .pth-map {
-    background: url("../image/main/pic_map.png");
+    background: url("../image/sprite/pic_map.png");
     width: 757px;
     height: 269px;
     background-size: cover;
@@ -411,10 +432,11 @@ html, body {
     -o-transition: all 1s ease-out;
     transition: all 1s ease-out; }
     .page-three .pth-map .pth-router {
-      background: url("../image/main/pic_route.png");
-      width: 0;
+      background-position: 0px -518px;
+      background-repeat: no-repeat;
+      width: 462px;
       height: 123px;
-      background-size: cover;
+      width: 0;
       position: absolute;
       top: 68px;
       left: 147px;
@@ -424,10 +446,10 @@ html, body {
       -o-transition: all 2s ease-out 1s;
       transition: all 2s ease-out 1s; }
     .page-three .pth-map .pth-start {
-      background: url("../image/main/pic_start.png");
+      background-position: -341px -142px;
+      background-repeat: no-repeat;
       width: 116px;
       height: 159px;
-      background-size: cover;
       position: absolute;
       top: 0;
       left: 84px;
@@ -438,10 +460,10 @@ html, body {
       -o-transition: all 0.5s ease-out 1s;
       transition: all 0.5s ease-out 1s; }
     .page-three .pth-map .pth-end {
-      background: url("../image/main/pic_end.png");
+      background-position: -457px -142px;
+      background-repeat: no-repeat;
       width: 99px;
       height: 130px;
-      background-size: cover;
       position: absolute;
       top: -40px;
       left: 546px;
@@ -465,28 +487,28 @@ html, body {
   z-index: 1;
   padding-bottom: 100px; }
   .page-four .pf-title {
-    background: url("../image/main/pic_title3.png");
+    background-position: -623px 0px;
+    background-repeat: no-repeat;
     width: 479px;
     height: 106px;
-    background-size: cover;
     position: absolute;
     top: 122px;
     left: 88px;
     z-index: 3; }
   .page-four .pf-left {
-    background: url("../image/main/pic_bus.png");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
     width: 623px;
     height: 398px;
-    background-size: cover;
     position: absolute;
     top: 286px;
     left: 38px;
     z-index: 1; }
   .page-four .pf-right {
-    background: url("../image/main/pic_page3.png");
+    background-position: 0px -398px;
+    background-repeat: no-repeat;
     width: 398px;
     height: 521px;
-    background-size: cover;
     position: absolute;
     top: 126px;
     left: 650px;
@@ -519,20 +541,24 @@ html, body {
       margin-left: 50px; }
     .bus-footer .bf-box .bf-logos {
       margin-top: 12px; }
-      .bus-footer .bf-box .bf-logos img {
+      .bus-footer .bf-box .bf-logos span.bf-logo {
         margin-right: 10px;
-        border-radius: 5px; }
-        .bus-footer .bf-box .bf-logos img:nth-child(1) {
+        border-radius: 5px;
+        display: inline-block; }
+        .bus-footer .bf-box .bf-logos span.bf-logo:nth-child(1) {
+          background-position: 0px -46px;
+          background-repeat: no-repeat;
           width: 124px;
           height: 46px; }
-        .bus-footer .bf-box .bf-logos img:nth-child(2) {
+        .bus-footer .bf-box .bf-logos span.bf-logo:nth-child(2) {
+          background-position: 0px 0px;
+          background-repeat: no-repeat;
           width: 125px;
           height: 46px; }
-        .bus-footer .bf-box .bf-logos img:nth-child(3) {
+        .bus-footer .bf-box .bf-logos span.bf-logo:nth-child(3) {
+          background-position: -125px 0px;
+          background-repeat: no-repeat;
           width: 123px;
           height: 46px; }
-
-.bus-footer img {
-  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
